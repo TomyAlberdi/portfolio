@@ -17,7 +17,7 @@ const Navbar = () => {
                     <Link to={"/Portfolio/contact"}>Contact</Link>
                 </section>
                 <section className="icon">
-                    <Link to={"/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                    <Link to={"/Portfolio/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
                 </section>
             </header>
             <header className='navbar-mobile'>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <i className="fa-solid fa-bars"></i>
                 </section>
                 <section className="icon">
-                    <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                    <Link to={"/Portfolio/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
                 </section>
             </header>
             <section className="mobileMenu">
