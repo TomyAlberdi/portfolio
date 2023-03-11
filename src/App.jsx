@@ -1,9 +1,19 @@
 import './sass/App.css'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './components/pages/Home'
 
 function App() {
     return (
         <div className="App">
-            <h1>First commit</h1>
+            <Navbar />
+            <main>
+                <Routes>
+                    <Route exact path='/' element={<Home />} />
+                </Routes>
+            </main>
+            <Footer />
         </div>
     )
 }

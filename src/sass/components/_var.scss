@@ -1,0 +1,11 @@
+$prim: #37306B;
+$sec: #BAD7E9;
+$acc: #EB455F;
+$white: rgb(255, 252, 255);
+
+@mixin flex-container ($direction, $space, $items) {
+    display: flex;
+    align-items: $items;
+    flex-direction: $direction;
+    justify-content: $space;    
+}
