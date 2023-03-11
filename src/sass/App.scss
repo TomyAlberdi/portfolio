@@ -20,11 +20,24 @@ html {
             background-color: var.$prim;
             main {
                 min-height: auto;
-                @include var.flex-container(row,center,center);
+                @include var.flex-container(column,center,flex-start);
+                section.pres {
+                    height: 16vh;
+                    padding: 2vh;
+                    h1 {
+                        font-size: 3rem;
+                        font-weight: lighter;
+                    }
+                    h3 {
+                        font-size: 1.25rem;
+                        font-weight: lighter;
+                        padding-left: 2vw;
+                    }
+                }
                 div.Main {
                     width: 100%;
                     padding: 1.5vh;
-                    min-height: 90vh;
+                    min-height: 74vh;
                     border: 1px solid red;
                 }
             }
@@ -42,7 +55,6 @@ html {
             div.App {
                 main {
                     div.Main {
-                        min-height: 90vh;
                     }
                 }
             }
@@ -52,5 +64,14 @@ html {
 
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
-    
+    html {
+        body {
+            div.App {
+                main {
+                    div.Main {
+                    }
+                }
+            }
+        }
+    }
 }
