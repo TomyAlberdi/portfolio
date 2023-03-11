@@ -13,6 +13,10 @@
 }
 html {
     scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
     body {
         overscroll-behavior-y: none;
         overscroll-behavior-x: none;
@@ -22,7 +26,11 @@ html {
                 min-height: auto;
                 @include var.flex-container(column,center,flex-start);
                 section.pres {
+                    z-index: 10;
+                    top: 10vh;
+                    position: fixed;
                     height: 16vh;
+                    width: 100%;
                     padding: 2vh;
                     h1 {
                         font-size: 3rem;
@@ -35,10 +43,10 @@ html {
                     }
                 }
                 div.Main {
+                    margin-top: 26vh;
                     width: 100%;
                     padding: 1.5vh;
                     min-height: 74vh;
-                    border: 1px solid red;
                 }
             }
         }
@@ -54,7 +62,13 @@ html {
         body {
             div.App {
                 main {
+                    section.pres {
+                        margin-top: 10vh;
+                        position: initial;
+                        z-index: 9;
+                    }
                     div.Main {
+                        margin-top: unset;
                     }
                 }
             }
@@ -68,7 +82,19 @@ html {
         body {
             div.App {
                 main {
+                    section.pres {
+                        margin-top: 10vh;
+                        position: initial;
+                        z-index: 9;
+                        h1 {
+                            font-size: 4rem;
+                        }
+                        h3 {
+                            font-size: 2rem;
+                        }
+                    }
                     div.Main {
+                        margin-top: unset;
                     }
                 }
             }

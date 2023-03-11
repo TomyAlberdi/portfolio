@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 header {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -8,6 +10,8 @@ header {
   width: 100%;
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
 }
 header section.icon {
   display: flex;
@@ -135,6 +139,9 @@ section.mobileMenu.open {
   }
   header.navbar-mobile {
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   header.navbar-mobile section.menuSection {
     display: flex;
@@ -158,6 +165,11 @@ section.mobileMenu.open {
     font-size: 2rem;
   }
 }
+div.Home div {
+  height: 50vh;
+  border: 1px solid red;
+}
+
 /* Query Mobile */
 /* Query Tablet */
 * {
@@ -170,6 +182,10 @@ section.mobileMenu.open {
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 html body {
   overscroll-behavior-y: none;
@@ -186,7 +202,11 @@ html body div.App main {
   justify-content: center;
 }
 html body div.App main section.pres {
+  z-index: 10;
+  top: 10vh;
+  position: fixed;
   height: 16vh;
+  width: 100%;
   padding: 2vh;
 }
 html body div.App main section.pres h1 {
@@ -199,14 +219,40 @@ html body div.App main section.pres h3 {
   padding-left: 2vw;
 }
 html body div.App main div.Main {
+  margin-top: 26vh;
   width: 100%;
   padding: 1.5vh;
   min-height: 74vh;
-  border: 1px solid red;
 }
 html body.open_menu {
   position: fixed;
 }
 
 /* Query Mobile */
-/* Query Tablet *//*# sourceMappingURL=App.css.map */
+@media screen and (max-width: 765px) {
+  html body div.App main section.pres {
+    margin-top: 10vh;
+    position: initial;
+    z-index: 9;
+  }
+  html body div.App main div.Main {
+    margin-top: unset;
+  }
+}
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+  html body div.App main section.pres {
+    margin-top: 10vh;
+    position: initial;
+    z-index: 9;
+  }
+  html body div.App main section.pres h1 {
+    font-size: 4rem;
+  }
+  html body div.App main section.pres h3 {
+    font-size: 2rem;
+  }
+  html body div.App main div.Main {
+    margin-top: unset;
+  }
+}/*# sourceMappingURL=App.css.map */

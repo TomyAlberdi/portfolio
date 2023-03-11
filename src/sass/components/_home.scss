@@ -1,7 +1,10 @@
 @use "./var";
 
 div.Home {
-
+    div {
+        height: 50vh;
+        border: 1px solid red;
+    }
 }
 
 /* Query Mobile */
