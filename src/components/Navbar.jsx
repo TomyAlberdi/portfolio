@@ -31,9 +31,9 @@ const Navbar = () => {
             <section className="mobileMenu">
                 <i className='fa-solid fa-xmark' onClick={openMenu}></i>
                 <div>
-                    <Link to={"/"} onClick={openMenu}>Home</Link>
-                    <Link to={"/projects"} onClick={openMenu}>Projects</Link>
-                    <Link to={"/contact"} onClick={openMenu}>Contact</Link>
+                    <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span> Home</span></Link>
+                    <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span> Projects</span></Link>
+                    <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span> Contact</span></Link>
                 </div>
             </section>
         </>

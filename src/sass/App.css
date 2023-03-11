@@ -59,6 +59,47 @@ header.navbar-mobile {
 
 section.mobileMenu {
   display: none;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  transition: all 0.3s ease-in;
+}
+section.mobileMenu div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+section.mobileMenu div a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.3);
+  gap: 2vh;
+  color: inherit;
+  height: 13vh;
+  width: inherit;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding-left: 35vw;
+}
+section.mobileMenu i.fa-xmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 2vh 3vh;
+}
+section.mobileMenu.open {
+  left: 0;
+  transition: all 0.3s ease-in;
 }
 
 /* Query Mobile */
@@ -85,46 +126,6 @@ section.mobileMenu {
   }
   section.mobileMenu {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 11;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: -100vw;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-    transition: all 0.3s ease-in;
-  }
-  section.mobileMenu div {
-    width: 100%;
-  }
-  section.mobileMenu div a {
-    color: inherit;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    width: inherit;
-    height: 13vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    border-top: 1px solid rgb(255, 252, 255);
-    border-bottom: 1px solid rgb(255, 252, 255);
-    font-size: 1.25rem;
-  }
-  section.mobileMenu i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 2rem;
-    padding: 2vh 3vh;
-  }
-  section.mobileMenu.open {
-    left: 0;
-    transition: all 0.3s ease-in;
   }
 }
 /* Query Tablet */
@@ -145,6 +146,16 @@ section.mobileMenu {
   }
   header.navbar-mobile section.menuSection i {
     font-size: 4rem;
+  }
+  section.mobileMenu {
+    display: flex;
+  }
+  section.mobileMenu i.fa-xmark {
+    font-size: 3rem;
+  }
+  section.mobileMenu div a {
+    padding-left: 40vw;
+    font-size: 2rem;
   }
 }
 footer {
@@ -186,15 +197,15 @@ html body div.App main {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  padding: 3vh;
+  padding: 1.5vh;
 }
 html body div.App main div.Main {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   padding: 1.5vh;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px #4a447a;
-  min-height: 77vh;
+  box-shadow: 0px 4px 4px 0px #1a1a22;
+  min-height: 80vh;
 }
 html body div.App main div.Main h1 {
   margin-bottom: 2vh;
@@ -206,4 +217,12 @@ html body.open_menu {
 }
 
 /* Query Mobile */
+@media screen and (max-width: 765px) {
+  html body div.App main {
+    padding: 1vh;
+  }
+  html body div.App main div.Main {
+    min-height: 80vh;
+  }
+}
 /* Query Tablet *//*# sourceMappingURL=App.css.map */
