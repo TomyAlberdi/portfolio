@@ -57,6 +57,10 @@ header.navbar-mobile {
   display: none;
 }
 
+section.mobileMenu {
+  display: none;
+}
+
 /* Query Mobile */
 @media screen and (max-width: 765px) {
   header.navbar-desktop {
@@ -78,6 +82,49 @@ header.navbar-mobile {
   }
   header.navbar-mobile section.menuSection i {
     font-size: 3rem;
+  }
+  section.mobileMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    transition: all 0.3s ease-in;
+  }
+  section.mobileMenu div {
+    width: 100%;
+  }
+  section.mobileMenu div a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: inherit;
+    height: 13vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border-top: 1px solid rgb(255, 252, 255);
+    border-bottom: 1px solid rgb(255, 252, 255);
+    font-size: 1.25rem;
+  }
+  section.mobileMenu i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    padding: 2vh 3vh;
+  }
+  section.mobileMenu.open {
+    left: 0;
+    transition: all 0.3s ease-in;
   }
 }
 /* Query Tablet */
@@ -136,5 +183,9 @@ html body div.App {
 html body div.App main {
   min-height: 83vh;
 }
+html body.open_menu {
+  position: fixed;
+}
+
 /* Query Mobile */
 /* Query Tablet *//*# sourceMappingURL=App.css.map */

@@ -26,6 +26,9 @@ html {
                 }
             }
         }
+        &.open_menu {
+            position: fixed;
+        }
     }
 }
 
