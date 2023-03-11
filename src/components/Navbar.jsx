@@ -12,12 +12,12 @@ const Navbar = () => {
         <>
             <header className='navbar-desktop'>
                 <section className='links'>
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/projects"}>Projects</Link>
-                    <Link to={"/contact"}>Contact</Link>
+                    <Link to={"/Portfolio/"}>Home</Link>
+                    <Link to={"/Portfolio/projects"}>Projects</Link>
+                    <Link to={"/Portfolio/contact"}>Contact</Link>
                 </section>
                 <section className="icon">
-                    <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                    <Link to={"/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
                 </section>
             </header>
             <header className='navbar-mobile'>
@@ -31,9 +31,9 @@ const Navbar = () => {
             <section className="mobileMenu">
                 <i className='fa-solid fa-xmark' onClick={openMenu}></i>
                 <div>
-                    <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span> Home</span></Link>
-                    <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span> Projects</span></Link>
-                    <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span> Contact</span></Link>
+                    <Link to={"/Portfolio/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span> Home</span></Link>
+                    <Link to={"/Portfolio/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span> Projects</span></Link>
+                    <Link to={"/Portfolio/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span> Contact</span></Link>
                 </div>
             </section>
         </>
