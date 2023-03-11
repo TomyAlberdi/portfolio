@@ -182,6 +182,24 @@ html body div.App {
 }
 html body div.App main {
   min-height: 83vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3vh;
+}
+html body div.App main div.Main {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 1.5vh;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #4a447a;
+  min-height: 77vh;
+}
+html body div.App main div.Main h1 {
+  margin-bottom: 2vh;
+  padding: 0.4vw;
+  border-bottom: solid 2px rgb(255, 252, 255);
 }
 html body.open_menu {
   position: fixed;
