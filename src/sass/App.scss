@@ -1,6 +1,5 @@
 @use "./components/var";
 @use "./components/navbar";
-@use "./components/footer";
 @use "./components/home";
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
@@ -20,21 +19,13 @@ html {
         div.App {
             background-color: var.$prim;
             main {
-                min-height: 83vh;
+                min-height: auto;
                 @include var.flex-container(row,center,center);
-                padding: 1.5vh;
                 div.Main {
-                    background-color: rgba(0, 0, 0, 0.3);
                     width: 100%;
                     padding: 1.5vh;
-                    border-radius: 10px;
-                    box-shadow: 0px 4px 4px 0px #1a1a22;
-                    min-height: 80vh;
-                    h1 {
-                        margin-bottom: 2vh;
-                        padding: 0.4vw;
-                        border-bottom: solid 2px var.$white;
-                    }
+                    min-height: 90vh;
+                    border: 1px solid red;
                 }
             }
         }
@@ -50,9 +41,8 @@ html {
         body {
             div.App {
                 main {
-                    padding: 1vh;
                     div.Main {
-                        min-height: 80vh;
+                        min-height: 90vh;
                     }
                 }
             }

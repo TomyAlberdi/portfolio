@@ -4,13 +4,13 @@ header {
     @include var.flex-container(row,space-between,center);
     z-index: 10;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     background-color: rgba(0, 0, 0, 0.3);
     section.icon {
         @include var.flex-container(row,center,center);
         cursor: pointer;
-        height: 12vh;
-        width: 12vh;
+        height: 10vh;
+        width: 10vh;
         a {
             height: 80%;
             width: 80%;
