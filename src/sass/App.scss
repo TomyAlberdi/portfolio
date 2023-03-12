@@ -1,6 +1,8 @@
 @use "./components/var";
 @use "./components/navbar";
 @use "./components/home";
+@use "./components/projects";
+@use "./components/contact";
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
@@ -25,28 +27,10 @@ html {
             main {
                 min-height: auto;
                 @include var.flex-container(column,center,flex-start);
-                section.pres {
-                    z-index: 10;
-                    top: 10vh;
-                    position: fixed;
-                    height: 16vh;
-                    width: 100%;
-                    padding: 2vh;
-                    h1 {
-                        font-size: 3rem;
-                        font-weight: lighter;
-                    }
-                    h3 {
-                        font-size: 1.25rem;
-                        font-weight: lighter;
-                        padding-left: 2vw;
-                    }
-                }
                 div.Main {
-                    margin-top: 26vh;
+                    margin-top: 10vh;
                     width: 100%;
-                    padding: 1.5vh;
-                    min-height: 74vh;
+                    min-height: 90vh;
                 }
             }
         }
@@ -62,13 +46,8 @@ html {
         body {
             div.App {
                 main {
-                    section.pres {
-                        margin-top: 10vh;
-                        position: initial;
-                        z-index: 9;
-                    }
                     div.Main {
-                        margin-top: unset;
+                        margin-top: 10vh;
                     }
                 }
             }
@@ -82,19 +61,8 @@ html {
         body {
             div.App {
                 main {
-                    section.pres {
-                        margin-top: 10vh;
-                        position: initial;
-                        z-index: 9;
-                        h1 {
-                            font-size: 4rem;
-                        }
-                        h3 {
-                            font-size: 2rem;
-                        }
-                    }
                     div.Main {
-                        margin-top: unset;
+                        margin-top: 10vh;
                     }
                 }
             }

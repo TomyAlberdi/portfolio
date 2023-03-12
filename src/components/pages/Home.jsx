@@ -3,15 +3,13 @@ import React from 'react'
 const Home = () => {
     return (
         <div className='Main Home'>
-            <div>
-                <h2>ey</h2>
-            </div>
-            <div>
-                <h2>eyy</h2>
-            </div>
-            <div>
-                <h2>eyyy</h2>
-            </div>
+            <section className="pres">
+                <h1>Tomás Alberdi</h1>
+                <h3>Web Developer</h3>
+            </section>
+            <section className="content">
+
+            </section>
         </div>
     )
 }

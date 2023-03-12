@@ -1,18 +1,62 @@
 @use "./var";
 
 div.Home {
-    div {
-        height: 50vh;
+    @include var.flex-container(row,center,center);
+    section.pres {
+        @include var.flex-container(column,flex-start,center);
+        z-index: 10;
+        height: 90vh;
+        width: 30%;
+        padding: 2vh 0;
+        h1 {
+            font-size: 3rem;
+            font-weight: lighter;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: lighter;
+            padding-left: 2vw;
+        }
+    }
+    section.content {
+        width: 70%;
+        height: 90vh;
         border: 1px solid red;
     }
 }
 
 /* Query Mobile */
 @media screen and (max-width: 765px) {
-
+    div.Home {
+        flex-direction: column;
+        section.pres {
+            width: 100%;
+            height: unset;
+            margin-top: unset;
+            position: initial;
+            z-index: 9;
+        }
+        section.content {
+            width: 100%;
+            height: 74vh;
+        }
+    }
 }
 
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
-
+    div.Home {
+        flex-direction: column;
+        section.pres {
+            width: 100%;
+            height: unset;
+            margin-top: unset;
+            position: initial;
+            z-index: 9;
+        }
+        section.content {
+            width: 100%;
+            height: 77vh;
+        }
+    }
 }

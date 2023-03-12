@@ -10,10 +10,6 @@ function App() {
         <div className="App">
             <Navbar />
             <main>
-                <section className="pres">
-                    <h1>Tomás Alberdi</h1>
-                    <h3>Web Developer</h3>
-                </section>
                 <Routes>
                     <Route exact path='/' element={<Home />} />
                     <Route path='/projects' element={<Projects />} />

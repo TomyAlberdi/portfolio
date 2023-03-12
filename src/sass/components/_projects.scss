@@ -1,0 +1,45 @@
+@use "./var";
+
+div.Projects {
+    width: 100%;
+    @include var.flex-container(row,center,center);
+    .mySwiper {
+        width: 70%;
+        height: 90vh;
+        padding: 3vh;
+        .swiper-slide {
+            align-self: center;
+            width: 100%;
+            div.ProjectSlide {
+                width: inherit;
+                div.card {
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 4px 0px #221e41;
+                    background-size: cover;
+                    height: 100%;
+                    width: inherit;
+                    will-change: transform, opacity;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+/* Query Mobile */
+@media screen and (max-width: 765px) {
+    div.Projects {
+        .mySwiper {
+            width: 100%;
+        }
+    }
+}
+
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+    div.Projects {
+        .mySwiper {
+            width: 100%;
+        }
+    }
+}
