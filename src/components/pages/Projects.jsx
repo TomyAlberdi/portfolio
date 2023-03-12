@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectSlide from '../utils/ProjectSlide';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
 import "swiper/css";
@@ -20,19 +19,19 @@ const Projects = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <ProjectSlide />
+                    <h2>1</h2>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectSlide />
+                    <h2>2</h2>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectSlide />
+                    <h2>3</h2>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectSlide />
+                    <h2>4</h2>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectSlide />
+                    <h2>5</h2>
                 </SwiperSlide>
             </Swiper>
         </div>

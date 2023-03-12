@@ -19,9 +19,22 @@ div.Home {
         }
     }
     section.content {
+        @include var.flex-container(row,center,center);
         width: 70%;
-        height: 90vh;
-        border: 1px solid red;
+        height: 74vh;
+        div.Card {
+            width: 10vw;
+            height: 10vw;
+            div.cardFace {
+                border-radius: 10px;
+                box-shadow: 0px 4px 4px 0px #221e41;
+                background-size: cover;
+                height: inherit;
+                width: inherit;
+                will-change: transform, opacity;
+                position: absolute;
+            }
+        }
     }
 }
 
