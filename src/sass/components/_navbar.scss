@@ -96,6 +96,7 @@ section.mobileMenu {
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
+            backdrop-filter: blur(20px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;
@@ -119,6 +120,7 @@ section.mobileMenu {
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
+            backdrop-filter: blur(20px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;

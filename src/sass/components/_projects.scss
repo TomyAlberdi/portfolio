@@ -4,7 +4,7 @@ div.Projects {
     width: 100%;
     @include var.flex-container(row,center,center);
     .mySwiper {
-        width: 70%;
+        width: 90%;
         height: 90vh;
         padding: 3vh;
         .swiper-slide {
@@ -22,6 +22,7 @@ div.Projects {
     div.Projects {
         .mySwiper {
             width: 100%;
+            height: 74vh;
         }
     }
 }
@@ -30,6 +31,7 @@ div.Projects {
 @media screen and (min-width: 766px) and (max-width: 1023px) {
     div.Projects {
         .mySwiper {
+            height: 76vh;
             width: 100%;
         }
     }

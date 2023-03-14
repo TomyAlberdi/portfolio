@@ -116,6 +116,8 @@ section.mobileMenu.open {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
   }
   header.navbar-mobile section.menuSection {
     display: flex;
@@ -142,6 +144,8 @@ section.mobileMenu.open {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
   }
   header.navbar-mobile section.menuSection {
     display: flex;
@@ -171,19 +175,11 @@ div.Home {
   flex-direction: row;
   justify-content: center;
 }
-div.Home section.content {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  width: 70%;
-  height: 74vh;
-}
-div.Home section.content div.Card {
+div.Home div.Card {
   width: 10vw;
   height: 10vw;
 }
-div.Home section.content div.Card div.cardFace {
+div.Home div.Card div.cardFace {
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px #221e41;
   background-size: cover;
@@ -198,33 +194,11 @@ div.Home section.content div.Card div.cardFace {
   div.Home {
     flex-direction: column;
   }
-  div.Home section.pres {
-    width: 100%;
-    height: unset;
-    margin-top: unset;
-    position: initial;
-    z-index: 9;
-  }
-  div.Home section.content {
-    width: 100%;
-    height: 74vh;
-  }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
   div.Home {
     flex-direction: column;
-  }
-  div.Home section.pres {
-    width: 100%;
-    height: unset;
-    margin-top: unset;
-    position: initial;
-    z-index: 9;
-  }
-  div.Home section.content {
-    width: 100%;
-    height: 77vh;
   }
 }
 div.Projects {
@@ -235,7 +209,7 @@ div.Projects {
   justify-content: center;
 }
 div.Projects .mySwiper {
-  width: 70%;
+  width: 90%;
   height: 90vh;
   padding: 3vh;
 }
@@ -251,11 +225,13 @@ div.Projects .mySwiper .swiper-slide {
 @media screen and (max-width: 765px) {
   div.Projects .mySwiper {
     width: 100%;
+    height: 74vh;
   }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
   div.Projects .mySwiper {
+    height: 76vh;
     width: 100%;
   }
 }
@@ -293,10 +269,10 @@ html body div.App main section.pres {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 10;
+  z-index: 9;
   height: 90vh;
   margin-top: 10vh;
-  width: 40%;
+  width: 30%;
   padding: 2vh 0;
 }
 html body div.App main section.pres h1 {
@@ -309,9 +285,10 @@ html body div.App main section.pres h3 {
   padding-left: 2vw;
 }
 html body div.App main div.Main {
+  border: 1px solid red;
   margin-top: 10vh;
-  width: 100%;
-  min-height: 90vh;
+  width: 70%;
+  height: 90vh;
 }
 html body.open_menu {
   position: fixed;
@@ -319,13 +296,31 @@ html body.open_menu {
 
 /* Query Mobile */
 @media screen and (max-width: 765px) {
+  html body div.App main {
+    flex-direction: column;
+  }
+  html body div.App main section.pres {
+    width: 100%;
+    height: unset;
+  }
   html body div.App main div.Main {
-    margin-top: 10vh;
+    margin-top: 0;
+    height: 74.75vh;
+    width: 100%;
   }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
+  html body div.App main {
+    flex-direction: column;
+  }
+  html body div.App main section.pres {
+    width: 100%;
+    height: unset;
+  }
   html body div.App main div.Main {
-    margin-top: 10vh;
+    margin-top: 0;
+    height: 77.5vh;
+    width: 100%;
   }
 }/*# sourceMappingURL=App.css.map */

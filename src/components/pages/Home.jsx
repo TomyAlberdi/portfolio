@@ -4,13 +4,11 @@ import Card from '../utils/Card'
 const Home = () => {
     return (
         <div className='Main Home'>
-            <section className="content">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </section>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
         </div>
     )
 }

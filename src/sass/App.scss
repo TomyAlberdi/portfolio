@@ -29,10 +29,10 @@ html {
                 @include var.flex-container(row,center,flex-start);
                 section.pres {
                     @include var.flex-container(column,flex-start,center);
-                    z-index: 10;
+                    z-index: 9;
                     height: 90vh;
                     margin-top: 10vh;
-                    width: 40%;
+                    width: 30%;
                     padding: 2vh 0;
                     h1 {
                         font-size: 3rem;
@@ -45,9 +45,10 @@ html {
                     }
                 }
                 div.Main {
+                    border: 1px solid red;
                     margin-top: 10vh;
-                    width: 100%;
-                    min-height: 90vh;
+                    width: 70%;
+                    height: 90vh;
                 }
             }
         }
@@ -63,8 +64,15 @@ html {
         body {
             div.App {
                 main {
+                    flex-direction: column;
+                    section.pres {
+                        width: 100%;
+                        height: unset;
+                    }
                     div.Main {
-                        margin-top: 10vh;
+                        margin-top: 0;
+                        height: 74.75vh;
+                        width: 100%;
                     }
                 }
             }
@@ -78,8 +86,15 @@ html {
         body {
             div.App {
                 main {
+                    flex-direction: column;
+                    section.pres {
+                        width: 100%;
+                        height: unset;
+                    }
                     div.Main {
-                        margin-top: 10vh;
+                        margin-top: 0;
+                        height: 77.5vh;
+                        width: 100%;
                     }
                 }
             }

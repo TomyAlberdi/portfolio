@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper";
+import { Mousewheel, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -10,12 +10,16 @@ const Projects = () => {
             <Swiper
                 direction={"vertical"}
                 slidesPerView={1}
-                spaceBetween={30}
+                spaceBetween={40}
                 mousewheel={true}
+                autoplay={{
+                    delay:2500,
+                    disableOnInteraction:true,
+                }}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Mousewheel, Pagination]}
+                modules={[Mousewheel, Pagination, Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
