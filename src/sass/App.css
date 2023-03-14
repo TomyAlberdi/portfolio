@@ -1,251 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
-header {
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  z-index: 10;
-  width: 100%;
-  height: 10vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  top: 0;
-}
-header section.icon {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  cursor: pointer;
-  height: 10vh;
-  width: 10vh;
-  transition: all 0.25s ease-in-out;
-}
-header section.icon a {
-  height: 80%;
-  width: 80%;
-}
-header section.icon a img {
-  height: 100%;
-  width: 100%;
-}
-header section.icon:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: all 0.25s ease-in-out;
-}
-header.navbar-desktop section.links {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  height: 100%;
-}
-header.navbar-desktop section.links a {
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  transition: all 0.25s ease-in-out;
-  text-decoration: none;
-  width: 10vw;
-  height: 100%;
-}
-header.navbar-desktop section.links a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: all 0.25s ease-in-out;
-}
-header.navbar-mobile {
-  display: none;
-}
-
-section.mobileMenu {
-  display: none;
-  z-index: 11;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: -100vw;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  transition: all 0.3s ease-in;
-}
-section.mobileMenu div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-section.mobileMenu div a {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.3);
-  gap: 2vh;
-  color: inherit;
-  height: 13vh;
-  width: inherit;
-  text-decoration: none;
-  font-size: 1.25rem;
-  padding-left: 35vw;
-}
-section.mobileMenu i.fa-xmark {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 2rem;
-  padding: 2vh 3vh;
-}
-section.mobileMenu.open {
-  left: 0;
-  transition: all 0.3s ease-in;
-}
-
 /* Query Mobile */
-@media screen and (max-width: 765px) {
-  header.navbar-desktop {
-    display: none;
-  }
-  header.navbar-mobile {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header.navbar-mobile section.menuSection {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    width: 12vh;
-  }
-  header.navbar-mobile section.menuSection i {
-    font-size: 3rem;
-  }
-  section.mobileMenu {
-    display: flex;
-  }
-}
 /* Query Tablet */
-@media screen and (min-width: 766px) and (max-width: 1023px) {
-  header.navbar-desktop {
-    display: none;
-  }
-  header.navbar-mobile {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header.navbar-mobile section.menuSection {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    width: 12vh;
-  }
-  header.navbar-mobile section.menuSection i {
-    font-size: 4rem;
-  }
-  section.mobileMenu {
-    display: flex;
-  }
-  section.mobileMenu i.fa-xmark {
-    font-size: 3rem;
-  }
-  section.mobileMenu div a {
-    padding-left: 40vw;
-    font-size: 2rem;
-  }
-}
-div.Home {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-div.Home section.pres {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 10;
-  height: 90vh;
-  width: 30%;
-  padding: 2vh 0;
-}
-div.Home section.pres h1 {
-  font-size: 3rem;
-  font-weight: lighter;
-}
-div.Home section.pres h3 {
-  font-size: 1.25rem;
-  font-weight: lighter;
-  padding-left: 2vw;
-}
-div.Home section.content {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  width: 70%;
-  height: 74vh;
-}
-div.Home section.content div.Card {
-  width: 10vw;
-  height: 10vw;
-}
-div.Home section.content div.Card div.cardFace {
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px #221e41;
-  background-size: cover;
-  height: inherit;
-  width: inherit;
-  will-change: transform, opacity;
-  position: absolute;
-}
-
-/* Query Mobile */
-@media screen and (max-width: 765px) {
-  div.Home {
-    flex-direction: column;
-  }
-  div.Home section.pres {
-    width: 100%;
-    height: unset;
-    margin-top: unset;
-    position: initial;
-    z-index: 9;
-  }
-  div.Home section.content {
-    width: 100%;
-    height: 74vh;
-  }
-}
-/* Query Tablet */
-@media screen and (min-width: 766px) and (max-width: 1023px) {
-  div.Home {
-    flex-direction: column;
-  }
-  div.Home section.pres {
-    width: 100%;
-    height: unset;
-    margin-top: unset;
-    position: initial;
-    z-index: 9;
-  }
-  div.Home section.content {
-    width: 100%;
-    height: 77vh;
-  }
-}
 div.Projects {
   width: 100%;
   display: flex;
@@ -255,7 +10,7 @@ div.Projects {
 }
 div.Projects .mySwiper {
   width: 70%;
-  height: 90vh;
+  height: 92vh;
   padding: 3vh;
 }
 div.Projects .mySwiper .swiper-slide {
@@ -296,21 +51,71 @@ html::-webkit-scrollbar {
 html body {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
-}
-html body div.App {
   background-color: #37306B;
 }
+html body div.App {
+  padding: 4vh;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 html body div.App main {
-  min-height: auto;
+  background-color: #37306B;
+  width: 100%;
+  height: 100%;
+  max-height: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+html body div.App main header {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10vh;
+  padding: 4vh 4vh 35vh;
+  z-index: 10;
+  width: 30%;
+  height: 100%;
+}
+html body div.App main header div.pres {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+html body div.App main header div.pres h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+html body div.App main header div.pres h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+html body div.App main header nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+html body div.App main header nav a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1vw;
+  text-decoration: none;
+}
+html body div.App main header nav a i {
+  font-size: 0.5rem;
 }
 html body div.App main div.Main {
-  margin-top: 10vh;
-  width: 100%;
-  min-height: 90vh;
+  background-color: #37306B;
+  width: 70%;
+  max-height: inherit;
 }
 html body.open_menu {
   position: fixed;
@@ -318,13 +123,29 @@ html body.open_menu {
 
 /* Query Mobile */
 @media screen and (max-width: 765px) {
-  html body div.App main div.Main {
-    margin-top: 10vh;
+  html body div.App main {
+    flex-direction: column;
+  }
+  html body div.App main section.pres {
+    height: unset;
+    width: 100vw;
+    padding: 14vh 0 5vh 0;
+  }
+  html body div.App main section.pres h1 {
+    font-size: 3rem;
   }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
-  html body div.App main div.Main {
-    margin-top: 10vh;
+  html body div.App main {
+    flex-direction: column;
+  }
+  html body div.App main section.pres {
+    height: unset;
+    width: 100vw;
+    padding: 14vh 0 5vh 0;
+  }
+  html body div.App main section.pres h1 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=App.css.map */
