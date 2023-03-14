@@ -171,25 +171,6 @@ div.Home {
   flex-direction: row;
   justify-content: center;
 }
-div.Home section.pres {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 10;
-  height: 90vh;
-  width: 30%;
-  padding: 2vh 0;
-}
-div.Home section.pres h1 {
-  font-size: 3rem;
-  font-weight: lighter;
-}
-div.Home section.pres h3 {
-  font-size: 1.25rem;
-  font-weight: lighter;
-  padding-left: 2vw;
-}
 div.Home section.content {
   display: flex;
   align-items: center;
@@ -304,8 +285,28 @@ html body div.App main {
   min-height: auto;
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+}
+html body div.App main section.pres {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+  height: 90vh;
+  margin-top: 10vh;
+  width: 40%;
+  padding: 2vh 0;
+}
+html body div.App main section.pres h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+html body div.App main section.pres h3 {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  padding-left: 2vw;
 }
 html body div.App main div.Main {
   margin-top: 10vh;

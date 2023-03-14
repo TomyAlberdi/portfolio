@@ -2,22 +2,6 @@
 
 div.Home {
     @include var.flex-container(row,center,center);
-    section.pres {
-        @include var.flex-container(column,flex-start,center);
-        z-index: 10;
-        height: 90vh;
-        width: 30%;
-        padding: 2vh 0;
-        h1 {
-            font-size: 3rem;
-            font-weight: lighter;
-        }
-        h3 {
-            font-size: 1.25rem;
-            font-weight: lighter;
-            padding-left: 2vw;
-        }
-    }
     section.content {
         @include var.flex-container(row,center,center);
         width: 70%;
