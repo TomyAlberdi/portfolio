@@ -27,6 +27,23 @@ html {
             main {
                 min-height: auto;
                 @include var.flex-container(row,center,flex-start);
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                overflow: hidden;
+                background-color: black;
+                .bkg {
+                    opacity: 0.2;
+                    inset: -200%;
+                    width: 400%;
+                    height: 400%;
+                    position: absolute;
+                    background-size: 256px 256px;
+                    background-repeat: repeat;
+                    background: url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png');
+                    -webkit-animation: kenburns-top-left 10s ease-in-out infinite alternate-reverse both;
+                    animation: kenburns-top-left 10s ease-in-out infinite alternate-reverse both;
+                }
                 section.pres {
                     @include var.flex-container(column,flex-start,center);
                     z-index: 9;
@@ -45,10 +62,10 @@ html {
                     }
                 }
                 div.Main {
-                    border: 1px solid red;
                     margin-top: 10vh;
                     width: 70%;
                     height: 90vh;
+                    z-index: 9;
                 }
             }
         }
@@ -57,6 +74,35 @@ html {
         }
     }
 }
+
+@-webkit-keyframes kenburns-top-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 16%;
+              transform-origin: 16% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, -15px);
+              transform: scale(1.25) translate(-20px, -15px);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
+}
+@keyframes kenburns-top-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 16%;
+              transform-origin: 16% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, -15px);
+              transform: scale(1.25) translate(-20px, -15px);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
+}  
 
 /* Query Mobile */
 @media screen and (max-width: 765px) {

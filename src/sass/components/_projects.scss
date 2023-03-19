@@ -13,6 +13,12 @@ div.Projects {
             border-radius: 10px;
             box-shadow: 0px 4px 4px 0px #221e41;
             padding: 3vh;
+            background-color: white;
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                background: white;
+            }
         }
     }
 }

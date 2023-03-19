@@ -1,12 +1,11 @@
 @use './var';
 
 header {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     @include var.flex-container(row,flex-end,center);
     z-index: 10;
     width: 100%;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     section.icon {

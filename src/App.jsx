@@ -6,10 +6,12 @@ import Projects from './components/pages/Projects'
 import Contact from './components/pages/Contact'
 
 function App() {
+
     return (
         <div className="App">
             <Navbar />
             <main>
+                <div className="bkg"></div>
                 <section className="pres">
                     <h1>Tomás Alberdi</h1>
                     <h3>Web Developer</h3>
