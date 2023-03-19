@@ -1,14 +1,14 @@
 import React from 'react'
-import Card from '../utils/Card'
 
 const Home = () => {
     return (
         <div className='Main Home'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <section className="infoPersonal">
+                <h2>info personal</h2>
+            </section>
+            <section className="skills">
+                <h2>skills</h2>
+            </section>
         </div>
     )
 }

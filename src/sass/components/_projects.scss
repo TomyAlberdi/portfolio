@@ -1,24 +1,17 @@
 @use "./var";
 
 div.Projects {
-    width: 100%;
-    @include var.flex-container(row,center,center);
-    .mySwiper {
-        width: 90%;
-        height: 90vh;
-        padding: 3vh;
-        .swiper-slide {
-            align-self: center;
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0px 4px 4px 0px #221e41;
-            padding: 3vh;
-            background-color: white;
-        }
-        .swiper-pagination {
-            .swiper-pagination-bullet {
-                background: white;
-            }
+    @include var.flex-container(row,flex-end,unset);
+    padding: 50vh 7vh 7vh 7vh;
+    overflow: scroll;
+    ul {
+        list-style-type: none;
+        width: 70%;
+        li {
+            border: 1px solid purple;
+            @include var.flex-container(row,right,center);
+            gap: 1.5vw;
+            height: 20vh;
         }
     }
 }
@@ -26,9 +19,9 @@ div.Projects {
 /* Query Mobile */
 @media screen and (max-width: 765px) {
     div.Projects {
-        .mySwiper {
+        padding: 25vh 3vh 3vh 3vh;
+        ul {
             width: 100%;
-            height: 74vh;
         }
     }
 }
@@ -36,9 +29,9 @@ div.Projects {
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
     div.Projects {
-        .mySwiper {
-            height: 76vh;
-            width: 100%;
+        padding: 25vh 3vh 3vh 3vh;
+        ul {
+            width: 86%;
         }
     }
 }

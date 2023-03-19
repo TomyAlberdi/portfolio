@@ -1,1 +1,32 @@
-@use "./var"
+@use "./var";
+
+div.Contact {
+    padding: 12vh 9vh 6vh;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    div {
+        border: 1px solid purple;
+        &.div1 { grid-area: 1 / 1 / 2 / 2; }
+        &.div2 { grid-area: 2 / 1 / 3 / 2; }
+        &.div3 { grid-area: 3 / 2 / 4 / 4; }
+        &.div4 { grid-area: 1 / 3 / 2 / 4; } 
+    }
+}
+
+/* Query Mobile */
+@media screen and (max-width: 765px) {
+    div.Contact {
+        grid-template-columns: 1fr 0.25fr 1fr;
+        padding: 12vh 2vh 6vh;
+    }
+}
+
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+    div.Contact {
+        grid-template-columns: 1fr 0.25fr 1fr;
+        padding: 12vh 2vh 6vh;
+    }
+}
