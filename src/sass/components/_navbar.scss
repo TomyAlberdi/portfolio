@@ -59,6 +59,9 @@ section.mobileMenu {
     left: -100vw;
     backdrop-filter: blur(20px);
     transition: all 0.3s ease-in;
+    i {
+        color: var.$acc;
+    }
     div {
         @include var.flex-container(column,center,center);
         width: 100%;

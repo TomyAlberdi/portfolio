@@ -72,6 +72,9 @@ section.mobileMenu {
           backdrop-filter: blur(20px);
   transition: all 0.3s ease-in;
 }
+section.mobileMenu i {
+  color: #EB455F;
+}
 section.mobileMenu div {
   display: flex;
   align-items: center;
@@ -256,7 +259,7 @@ div.Projects ul li a:hover {
   }
   div.Projects ul li a {
     flex-direction: column;
-    padding: 2vh 0;
+    padding: 4vh 0;
   }
   div.Projects ul li a span.nombre {
     font-size: 2.25rem;
@@ -271,13 +274,13 @@ div.Projects ul li a:hover {
     padding: 25vh 3vh 3vh 3vh;
   }
   div.Projects ul {
-    width: 86%;
+    width: 100%;
   }
   div.Projects ul li a {
     padding: 2vh 0;
   }
   div.Projects ul li a span.nombre {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 div.Contact {
@@ -303,9 +306,9 @@ div.Contact div.link section {
   width: 10rem;
   height: 10rem;
   cursor: pointer;
-  transition: all 0.3s ease-out;
 }
 div.Contact div.link section i {
+  transition: all 0.3s ease-out;
   color: #EB455F;
   font-size: 5rem;
 }
@@ -322,9 +325,9 @@ div.Contact div.link section span h3 {
 div.Contact div.link section span i {
   font-size: 1rem;
 }
-div.Contact div.link section:hover {
-  transform: scale(1.1);
+div.Contact div.link section:hover i {
   transition: all 0.3s ease-out;
+  color: #e3a2ac;
 }
 div.Contact div.div1 {
   grid-area: 1/1/2/2;
