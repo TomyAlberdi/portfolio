@@ -251,6 +251,45 @@ div.Contact {
 }
 div.Contact div {
   border: 1px solid purple;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+div.Contact div.link section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  background-color: rgb(9, 9, 9);
+  box-shadow: 0px 5px 5px 0px rgb(24, 24, 24);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+div.Contact div.link section i {
+  font-size: 5rem;
+}
+div.Contact div.link section span {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5vw;
+}
+div.Contact div.link section span h3 {
+  text-align: center;
+}
+div.Contact div.link section span i {
+  font-size: 1rem;
+}
+div.Contact div.link section:hover {
+  transition: all 0.3s ease-out;
+  transform: translateY(-0.5vh);
+  background-color: rgb(15, 15, 15);
 }
 div.Contact div.div1 {
   grid-area: 1/1/2/2;
@@ -270,6 +309,13 @@ div.Contact div.div4 {
   div.Contact {
     grid-template-columns: 1fr 0.25fr 1fr;
     padding: 12vh 2vh 6vh;
+  }
+  div.Contact div.link section {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  div.Contact div.link section i {
+    font-size: 3.75rem;
   }
 }
 /* Query Tablet */
@@ -311,8 +357,8 @@ html body div.App main {
 }
 html body div.App main .bkg {
   opacity: 0.2;
-  width: 3000vh;
-  height: 3000vh;
+  width: 3500vh;
+  height: 3500vh;
   position: absolute;
   background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
   animation: rotate-center 1000s linear infinite;

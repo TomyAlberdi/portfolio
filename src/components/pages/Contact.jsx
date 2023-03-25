@@ -4,10 +4,22 @@ const Contact = () => {
     return (
         <div className='Main Contact'>
             <div className='link div1'>
-                <h2>link1</h2>
+                <section>
+                    <i className="fa-brands fa-github"></i>
+                    <span>
+                        <h3>GitHub</h3>
+                        <i className="fa-solid fa-link"></i>
+                    </span>
+                </section>
             </div>
             <div className='link div2'>
-                <h2>link2</h2>
+                <section>
+                    <i className="fa-brands fa-linkedin"></i>
+                    <span>
+                        <h3>LinkedIn</h3>
+                        <i className="fa-solid fa-link"></i>
+                    </span>
+                </section>
             </div>
             <div className='copyMail div3'>
                 <h2>copymail</h2>
