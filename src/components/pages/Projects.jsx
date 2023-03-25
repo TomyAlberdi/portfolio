@@ -1,81 +1,27 @@
 import React from 'react'
+import projectsList from '../utils/projects.json'
 
 const Projects = () => {
     return (
         <div className='Main Projects'>
             <ul>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
-                <li>
-                    <span className="date">2022</span>
-                    <span className="nombre">Nombre Proyecto</span>
-                    <div class="icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                </li>
+                {
+                    projectsList.map((item,index) => {
+                        return <li key={index}>
+                            <a href={item.link} target="_blank">
+                                <span className="date">{item.año}</span>
+                                <span className="nombre">{item.nombre}</span>
+                                <div className="icons">
+                                    {
+                                        item.icons.map((e,index) => {
+                                            return <i className={e} key={index}></i>
+                                        })
+                                    }
+                                </div>
+                            </a>
+                        </li>
+                    })
+                }
             </ul>
         </div>
     )

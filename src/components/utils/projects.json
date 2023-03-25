@@ -1,0 +1,52 @@
+[
+    {
+        "año":"2022",
+        "nombre":"To-Do List with Themes",
+        "icons":[
+            "fa-brands fa-html5",
+            "fa-brands fa-sass",
+            "fa-brands fa-js"
+        ],
+        "link":"https://tomyalberdi.github.io/ToDo-App/"
+    },
+    {
+        "año":"2022",
+        "nombre":"Time Tracking Dashboard",
+        "icons":[
+            "fa-brands fa-html5",
+            "fa-brands fa-sass",
+            "fa-brands fa-js"
+        ],
+        "link":"https://tomyalberdi.github.io/Time-Tracking-Dashboard/"
+    },
+    {
+        "año":"2022",
+        "nombre":"Interactive Card Details Form",
+        "icons":[
+            "fa-brands fa-html5",
+            "fa-brands fa-sass",
+            "fa-brands fa-js"
+        ],
+        "link":"https://tomyalberdi.github.io/Interactive-Card-Details-Form/"
+    },
+    {
+        "año":"2022",
+        "nombre":"Expenses Chart",
+        "icons":[
+            "fa-brands fa-html5",
+            "fa-brands fa-sass",
+            "fa-brands fa-js"
+        ],
+        "link":"https://tomyalberdi.github.io/Expenses-Chart-Component/"
+    },
+    {
+        "año":"2022",
+        "nombre":"Advice Generator",
+        "icons":[
+            "fa-brands fa-html5",
+            "fa-brands fa-sass",
+            "fa-brands fa-js"
+        ],
+        "link":"https://tomyalberdi.github.io/Advice-Generator-App/"
+    }
+]

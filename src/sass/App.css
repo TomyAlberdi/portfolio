@@ -212,28 +212,28 @@ div.Projects {
 }
 div.Projects ul {
   list-style-type: none;
-  width: 90%;
+  width: 100%;
 }
-div.Projects ul li {
+div.Projects ul li a {
+  text-decoration: none;
   display: flex;
   align-items: baseline;
   flex-direction: row;
   justify-content: right;
   gap: 1.5vw;
   padding: 4vh 0;
-  margin: 2.5vh 0;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-div.Projects ul li span.date {
+div.Projects ul li a span.date {
   font-weight: bold;
 }
-div.Projects ul li span.nombre {
+div.Projects ul li a span.nombre {
   font-size: 4rem;
   font-weight: lighter;
   color: #EB455F;
 }
-div.Projects ul li div.icons {
+div.Projects ul li a div.icons {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -241,8 +241,8 @@ div.Projects ul li div.icons {
   gap: 0.5vw;
   font-size: 1.5rem;
 }
-div.Projects ul li:hover {
-  transform: translateX(-4vw);
+div.Projects ul li a:hover {
+  transform: translateX(-3vw);
   transition: all 0.3s ease-out;
 }
 
@@ -254,14 +254,14 @@ div.Projects ul li:hover {
   div.Projects ul {
     width: 100%;
   }
-  div.Projects ul li {
+  div.Projects ul li a {
     flex-direction: column;
     padding: 2vh 0;
   }
-  div.Projects ul li span.nombre {
+  div.Projects ul li a span.nombre {
     font-size: 2.25rem;
   }
-  div.Projects ul li div.icons {
+  div.Projects ul li a div.icons {
     gap: 2.5vw;
   }
 }
@@ -273,10 +273,10 @@ div.Projects ul li:hover {
   div.Projects ul {
     width: 86%;
   }
-  div.Projects ul li {
+  div.Projects ul li a {
     padding: 2vh 0;
   }
-  div.Projects ul li span.nombre {
+  div.Projects ul li a span.nombre {
     font-size: 3rem;
   }
 }
