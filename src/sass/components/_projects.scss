@@ -6,12 +6,34 @@ div.Projects {
     overflow: scroll;
     ul {
         list-style-type: none;
-        width: 70%;
+        width: 80%;
         li {
-            border: 1px solid purple;
-            @include var.flex-container(row,right,center);
+            @include var.flex-container(row,right,baseline);
             gap: 1.5vw;
-            height: 20vh;
+            padding: 4vh 0;
+            margin: 2.5vh 0;
+            span.date {
+                font-weight: bold;
+            }
+            span.nombre {
+                font-size: 4rem;
+                font-weight: lighter;
+            }
+            div.icons {
+                @include var.flex-container(row,center,center);
+                gap: 0.5vw;
+                font-size: 1.5rem;
+            }
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            &:hover {
+                span.nombre {
+                    transition: all 0.3s ease-out;
+                    // color: rgb(165, 30, 30);
+                    // color: firebrick;
+                    color: var.$acc;
+                }
+            }
         }
     }
 }

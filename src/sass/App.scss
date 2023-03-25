@@ -4,7 +4,7 @@
 @use "./components/projects";
 @use "./components/contact";
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -29,7 +29,7 @@ html {
                 overflow: hidden;
                 background-color: black;
                 .bkg {
-                    opacity: 0.2;
+                    opacity: 0.1;
                     width: 3500vh;
                     height: 3500vh;
                     position: absolute;
