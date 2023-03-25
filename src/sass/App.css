@@ -289,6 +289,9 @@ div.Contact div.div4 {
 
 html {
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 html body {
   overscroll-behavior-y: none;
@@ -345,6 +348,28 @@ html body div.App main div.Main {
 html body div.App main div.Main::-webkit-scrollbar {
   display: none;
 }
+html body div.App main div.Welcome {
+  animation: fade-out 2.5s ease-out 1.5s both;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+html body div.App main div.Welcome h1 {
+  animation: fade-out 1.5s ease-out 1.5s both;
+  font-size: 3rem;
+  color: rgb(255, 252, 255);
+}
+html body div.App main div.Welcome h1 span {
+  font-size: 1.2rem;
+  padding-left: 1vw;
+  color: lightgrey;
+}
 html body.open_menu {
   position: fixed;
 }
@@ -363,6 +388,16 @@ html body.open_menu {
     margin-top: 0;
     height: 74.75vh;
     width: 100%;
+  }
+  html body div.App main div.Welcome h1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 2.5rem;
+  }
+  html body div.App main div.Welcome h1 span {
+    font-size: 1.5rem;
   }
 }
 /* Query Tablet */
@@ -387,5 +422,13 @@ html body.open_menu {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=App.css.map */

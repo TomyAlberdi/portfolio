@@ -4,13 +4,23 @@ import Navbar from './components/Navbar'
 import Home from './components/pages/Home'
 import Projects from './components/pages/Projects'
 import Contact from './components/pages/Contact'
+import Welcome from './components/utils/Welcome'
+import { useEffect, useState } from 'react'
 
 function App() {
 
+    const [Loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 3500);
+    }, [])
+    
     return (
         <div className="App">
             <Navbar />
             <main>
+                <Welcome Loading={Loading} />
                 <div className="bkg"></div>
                 <section className="pres">
                     <h1>Tomás Alberdi</h1>
