@@ -212,7 +212,7 @@ div.Projects {
 }
 div.Projects ul {
   list-style-type: none;
-  width: 80%;
+  width: 90%;
 }
 div.Projects ul li {
   display: flex;
@@ -223,7 +223,7 @@ div.Projects ul li {
   padding: 4vh 0;
   margin: 2.5vh 0;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 div.Projects ul li span.date {
   font-weight: bold;
@@ -231,6 +231,7 @@ div.Projects ul li span.date {
 div.Projects ul li span.nombre {
   font-size: 4rem;
   font-weight: lighter;
+  color: #EB455F;
 }
 div.Projects ul li div.icons {
   display: flex;
@@ -240,9 +241,9 @@ div.Projects ul li div.icons {
   gap: 0.5vw;
   font-size: 1.5rem;
 }
-div.Projects ul li:hover span.nombre {
+div.Projects ul li:hover {
+  transform: translateX(-4vw);
   transition: all 0.3s ease-out;
-  color: #EB455F;
 }
 
 /* Query Mobile */
@@ -253,6 +254,16 @@ div.Projects ul li:hover span.nombre {
   div.Projects ul {
     width: 100%;
   }
+  div.Projects ul li {
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  div.Projects ul li span.nombre {
+    font-size: 2.25rem;
+  }
+  div.Projects ul li div.icons {
+    gap: 2.5vw;
+  }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
@@ -261,6 +272,12 @@ div.Projects ul li:hover span.nombre {
   }
   div.Projects ul {
     width: 86%;
+  }
+  div.Projects ul li {
+    padding: 2vh 0;
+  }
+  div.Projects ul li span.nombre {
+    font-size: 3rem;
   }
 }
 div.Contact {
@@ -289,6 +306,7 @@ div.Contact div.link section {
   transition: all 0.3s ease-out;
 }
 div.Contact div.link section i {
+  color: #EB455F;
   font-size: 5rem;
 }
 div.Contact div.link section span {
@@ -304,8 +322,8 @@ div.Contact div.link section span h3 {
 div.Contact div.link section span i {
   font-size: 1rem;
 }
-div.Contact div.link section:hover i {
-  color: #EB455F;
+div.Contact div.link section:hover {
+  transform: scale(1.1);
   transition: all 0.3s ease-out;
 }
 div.Contact div.div1 {
@@ -421,7 +439,7 @@ html body div.App main div.Welcome {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
 }
 html body div.App main div.Welcome h1 {
   animation: fade-out 1.5s ease-out 1.5s both;

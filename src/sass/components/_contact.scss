@@ -14,6 +14,7 @@ div.Contact {
                 @include var.flex-container(column,center,center);
                 gap: 1vh;
                 i {
+                    color: var.$acc;
                     font-size: 5rem;
                 }
                 span {
@@ -31,10 +32,8 @@ div.Contact {
                 cursor: pointer;
                 transition: all 0.3s ease-out;
                 &:hover {
-                    i {
-                        color: var.$acc;
-                        transition: all 0.3s ease-out;
-                    }
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-out;
                 }
             }
         }

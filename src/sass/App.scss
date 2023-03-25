@@ -73,7 +73,7 @@ html {
                     width: 100%;
                     z-index: 50;
                     @include var.flex-container(row,center,center);
-                    background-color: black;
+                    background-color: rgb(24, 24, 24);
                     h1 {
                         -webkit-animation: fade-out 1.5s ease-out 1.5s both;
                         animation: fade-out 1.5s ease-out 1.5s both;
