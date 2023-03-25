@@ -29,8 +29,6 @@ div.Projects {
             &:hover {
                 span.nombre {
                     transition: all 0.3s ease-out;
-                    // color: rgb(165, 30, 30);
-                    // color: firebrick;
                     color: var.$acc;
                 }
             }
