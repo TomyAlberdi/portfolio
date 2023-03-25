@@ -107,6 +107,9 @@ section.mobileMenu.open {
 
 /* Query Mobile */
 @media screen and (max-width: 765px) {
+  header {
+    position: absolute;
+  }
   header.navbar-desktop {
     display: none;
   }
@@ -115,8 +118,8 @@ section.mobileMenu.open {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
   header.navbar-mobile section.menuSection {
     display: flex;
@@ -135,6 +138,9 @@ section.mobileMenu.open {
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
+  header {
+    position: absolute;
+  }
   header.navbar-desktop {
     display: none;
   }
@@ -143,8 +149,8 @@ section.mobileMenu.open {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
   header.navbar-mobile section.menuSection {
     display: flex;
@@ -283,10 +289,6 @@ div.Contact div.div4 {
 
 html {
   scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-html::-webkit-scrollbar {
-  display: none;
 }
 html body {
   overscroll-behavior-y: none;
@@ -337,21 +339,20 @@ html body div.App main div.Main {
   height: 100vh;
   z-index: 9;
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html body div.App main div.Main::-webkit-scrollbar {
+  display: none;
 }
 html body.open_menu {
   position: fixed;
 }
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 /* Query Mobile */
 @media screen and (max-width: 765px) {
   html body div.App main {
+    max-height: 100dvh;
     flex-direction: column;
   }
   html body div.App main section.pres {
@@ -367,6 +368,7 @@ html body.open_menu {
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
   html body div.App main {
+    max-height: 100dvh;
     flex-direction: column;
   }
   html body div.App main section.pres {
@@ -377,5 +379,13 @@ html body.open_menu {
     margin-top: 0;
     height: 77.5vh;
     width: 100%;
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }/*# sourceMappingURL=App.css.map */

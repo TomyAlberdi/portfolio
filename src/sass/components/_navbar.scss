@@ -90,12 +90,13 @@ section.mobileMenu {
 /* Query Mobile */
 @media screen and (max-width: 765px) {
     header {
+        position: absolute;
         &.navbar-desktop {
             display: none;
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(5px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;
@@ -114,12 +115,13 @@ section.mobileMenu {
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
     header {
+        position: absolute;
         &.navbar-desktop {
             display: none;
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(5px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;

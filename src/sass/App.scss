@@ -15,10 +15,6 @@
 }
 html {
     scroll-behavior: smooth;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    scrollbar-width: none;
     body {
         overscroll-behavior-y: none;
         overscroll-behavior-x: none;
@@ -62,11 +58,65 @@ html {
                     height: 100vh;
                     z-index: 9;
                     overflow: scroll;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
                 }
             }
         }
         &.open_menu {
             position: fixed;
+        }
+    }
+}
+
+
+  
+
+/* Query Mobile */
+@media screen and (max-width: 765px) {
+    html {
+        body {
+            div.App {
+                main {
+                    max-height: 100dvh;
+                    flex-direction: column;
+                    section.pres {
+                        width: 100%;
+                        height: unset;
+                    }
+                    div.Main {
+                        margin-top: 0;
+                        height: 74.75vh;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+    html {
+        body {
+            div.App {
+                main {
+                    max-height: 100dvh;
+                    flex-direction: column;
+                    section.pres {
+                        width: 100%;
+                        height: unset;
+                    }
+                    div.Main {
+                        margin-top: 0;
+                        height: 77.5vh;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
@@ -90,49 +140,4 @@ html {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
 }
-}
-  
-
-/* Query Mobile */
-@media screen and (max-width: 765px) {
-    html {
-        body {
-            div.App {
-                main {
-                    flex-direction: column;
-                    section.pres {
-                        width: 100%;
-                        height: unset;
-                    }
-                    div.Main {
-                        margin-top: 0;
-                        height: 74.75vh;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* Query Tablet */
-@media screen and (min-width: 766px) and (max-width: 1023px) {
-    html {
-        body {
-            div.App {
-                main {
-                    flex-direction: column;
-                    section.pres {
-                        width: 100%;
-                        height: unset;
-                    }
-                    div.Main {
-                        margin-top: 0;
-                        height: 77.5vh;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
 }
