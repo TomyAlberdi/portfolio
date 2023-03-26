@@ -53,6 +53,11 @@ div.Projects {
                     div.icons {
                         gap: 2.5vw;
                     }
+                    -webkit-tap-highlight-color: transparent;
+                    &:hover {
+                        transform: translateX(3vw);
+                        transition: all 0.3s ease-out;
+                    }
                 }
             }
         }
@@ -70,6 +75,11 @@ div.Projects {
                     padding: 2vh 0;
                     span.nombre {
                         font-size: 2.75rem;
+                    }
+                    -webkit-tap-highlight-color: transparent;
+                    &:hover {
+                        transform: translateX(3vw);
+                        transition: all 0.3s ease-out;
                     }
                 }
             }

@@ -14,7 +14,6 @@ div.Contact {
                 @include var.flex-container(column,center,center);
                 gap: 1vh;
                 i {
-                    transition: all 0.3s ease-out;
                     color: var.$acc;
                     font-size: 5rem;
                 }
@@ -31,11 +30,10 @@ div.Contact {
                 width: 10rem;
                 height: 10rem;
                 cursor: pointer;
+                transition: all 0.3s ease-out;
                 &:hover {
-                    i {
-                        transition: all 0.3s ease-out;
-                        color: #e3a2ac;
-                    }
+                    transition: all 0.3s ease-out;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -59,6 +57,7 @@ div.Contact {
                     i {
                         font-size: 3.75rem;
                     }
+                    -webkit-tap-highlight-color: transparent;
                 }
             }
         }
@@ -70,5 +69,12 @@ div.Contact {
     div.Contact {
         grid-template-columns: 1fr 0.25fr 1fr;
         padding: 12vh 2vh 6vh;
+        div {
+            &.link {
+                section {
+                    -webkit-tap-highlight-color: transparent;
+                }
+            }
+        }
     }
 }
