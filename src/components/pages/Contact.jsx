@@ -5,9 +5,9 @@ const Contact = () => {
 
     const copyMail = () => {
         navigator.clipboard.writeText("tomas.alberdi.2001@gmail.com")
-        let sec = document.querySelector(".copyMail a")
-        let icon = document.querySelector(".copyMail a i")
-        let text = document.querySelector(".copyMail a h2")
+        let sec = document.querySelector(".copyMail section")
+        let icon = document.querySelector(".copyMail section i")
+        let text = document.querySelector(".copyMail section h2")
         sec.classList.add("copied")
         icon.classList.remove("fa-copy")
         icon.classList.remove("fa-regular")
