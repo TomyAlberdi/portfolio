@@ -24,7 +24,7 @@ function App() {
                 <div className="bkg"></div>
                 <section className="pres">
                     <h1>Tomás Alberdi</h1>
-                    <h3>Web Developer</h3>
+                    <h3>Software Developer</h3>
                 </section>
                 <Routes>
                     <Route exact path='/' element={<Home />} />

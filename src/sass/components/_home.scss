@@ -1,17 +1,57 @@
 @use "./var";
 
 div.Home {
-    padding-top: 8vh;
-    display: grid;
-    grid-template-columns: 1fr 0.75fr 1fr;
-    grid-template-rows: repeat(6, 1fr); 
+    @include var.flex-container(row,space-between,center);
     section {
-        border: 1px solid green;
-        &.infoPersonal {
-            grid-area: 2 / 3 / 5 / 4;
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            span {
+                color: var.$acc;
+            }
         }
         &.skills {
-            grid-area: 3 / 1 / 7 / 2;
+            padding: 1.5vh;
+            width: 46%;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            a {
+                text-decoration: none;
+                color: var.$acc;
+                font-size: 1.5rem;
+            }
+            p {
+                line-height: 2rem;
+            }
+            ul {
+                @include var.flex-container(column,left,flex-start);
+                font-size: 1.1rem;
+                list-style-type: none;
+                li {
+                    padding: 1.5vh 0;
+                    &::before {
+                        content: "\25A0";
+                        color: var.$acc; 
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                    }
+                }
+            }
+            border: 1px solid var.$acc;
+            border-radius: 5px;
+        }
+        &.infoPersonal {
+            width: 25%;
+            align-self: flex-end;
+            padding-bottom: 5vh;
+            p {
+                line-height: 2.4rem;
+            }
         }
     }
 }
@@ -19,13 +59,42 @@ div.Home {
 /* Query Mobile */
 @media screen and (max-width: 765px) {
     div.Home {
-        grid-template-columns: 1fr 0.50fr 1fr;
+        flex-direction: column;
+        section {
+            &.infoPersonal {
+                width: 94%;
+                padding: 1.5vh;
+                align-self: center;
+            }
+            &.skills {
+                overflow: unset;
+                width: 94%;
+                padding: 1.5vh;
+                margin-bottom: 1.5vh;
+                p {
+                    line-height: 2.4rem;
+                }
+            }
+        }
     }
 }
 
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
     div.Home {
-        grid-template-columns: 1fr 0.35fr 1fr;
+        section {
+            &.infoPersonal {
+                width: 50%;
+                padding: 3vh;
+                align-self: flex-start;
+            }
+            &.skills {
+                overflow: unset;
+                width: 50%;
+                p {
+                    line-height: 2.4rem;
+                }
+            }
+        }
     }
 }
