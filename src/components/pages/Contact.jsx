@@ -1,6 +1,20 @@
 import React from 'react'
 
 const Contact = () => {
+
+    const copyMail = () => {
+        navigator.clipboard.writeText("tomas.alberdi.2001@gmail.com")
+        let sec = document.querySelector(".copyMail section")
+        let icon = document.querySelector(".copyMail section i")
+        let text = document.querySelector(".copyMail section h2")
+        sec.classList.add("copied")
+        icon.classList.remove("fa-copy")
+        icon.classList.remove("fa-regular")
+        icon.classList.add("fa-check")
+        icon.classList.add("fa-solid")
+        text.innerHTML = "Email Saved!"
+    }
+
     return (
         <div className='Main Contact'>
             <div className='link div1'>
@@ -22,10 +36,12 @@ const Contact = () => {
                 </section>
             </div>
             <div className='copyMail div3'>
-                <h2>copymail</h2>
+                <section onClick={copyMail}>
+                    <h2>tomas.alberdi.2001@gmail.com</h2>
+                    <i className="fa-regular fa-copy"></i>
+                </section>
             </div>
             <div className='linkForm div4'>
-                <h2>linkform</h2>
             </div>
         </div>
     )

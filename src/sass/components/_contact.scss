@@ -7,7 +7,6 @@ div.Contact {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); 
     div {
-        border: 1px solid purple;
         @include var.flex-container(row,center,center);
         &.link {
             section {
@@ -22,6 +21,7 @@ div.Contact {
                     gap: 0.5vw;
                     h3 {
                         text-align: center;
+                        font-weight: 300;
                     }
                     i {
                         font-size: 1rem;
@@ -33,7 +33,36 @@ div.Contact {
                 transition: all 0.3s ease-out;
                 &:hover {
                     transition: all 0.3s ease-out;
-                    transform: scale(1.1);
+                    transform: scale(1.05);
+                }
+            }
+        }
+        &.copyMail {
+            section {
+                @include var.flex-container(row,space-between,center);
+                padding: 1.75vh;
+                gap: 1vw;
+                border-radius: 5px;
+                cursor: pointer;
+                h2 {
+                    font-weight: 300;
+                    text-align: center;
+                }
+                i {
+                    font-size: 2rem;
+                    color: var.$acc;
+                }
+                border: 2px solid var.$acc;
+                transition: all 0.3s ease-out;
+                &:hover {
+                    transition: all 0.3s ease-out;
+                    transform: scale(1.05);
+                }
+                &.copied {
+                    border: 2px solid rgb(3, 130, 92);
+                    i {
+                        color: rgb(3, 130, 92);
+                    }
                 }
             }
         }
@@ -60,6 +89,19 @@ div.Contact {
                     -webkit-tap-highlight-color: transparent;
                 }
             }
+            &.copyMail {
+                section {
+                    padding: 2vh 1vh;
+                    gap: 2vw;
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    i {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            &.div3 { grid-area: 3 / 1 / 4 / 4; }
         }
     }
 }
@@ -75,6 +117,7 @@ div.Contact {
                     -webkit-tap-highlight-color: transparent;
                 }
             }
+            &.div3 { grid-area: 3 / 1 / 4 / 4; }
         }
     }
 }

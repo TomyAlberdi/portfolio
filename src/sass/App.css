@@ -212,6 +212,7 @@ div.Projects {
   justify-content: flex-end;
   padding: 50vh 7vh 7vh 7vh;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 div.Projects ul {
   list-style-type: none;
@@ -301,7 +302,6 @@ div.Contact {
   grid-template-rows: repeat(3, 1fr);
 }
 div.Contact div {
-  border: 1px solid purple;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -331,13 +331,44 @@ div.Contact div.link section span {
 }
 div.Contact div.link section span h3 {
   text-align: center;
+  font-weight: 300;
 }
 div.Contact div.link section span i {
   font-size: 1rem;
 }
 div.Contact div.link section:hover {
   transition: all 0.3s ease-out;
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+div.Contact div.copyMail section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.75vh;
+  gap: 1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #EB455F;
+  transition: all 0.3s ease-out;
+}
+div.Contact div.copyMail section h2 {
+  font-weight: 300;
+  text-align: center;
+}
+div.Contact div.copyMail section i {
+  font-size: 2rem;
+  color: #EB455F;
+}
+div.Contact div.copyMail section:hover {
+  transition: all 0.3s ease-out;
+  transform: scale(1.05);
+}
+div.Contact div.copyMail section.copied {
+  border: 2px solid rgb(3, 130, 92);
+}
+div.Contact div.copyMail section.copied i {
+  color: rgb(3, 130, 92);
 }
 div.Contact div.div1 {
   grid-area: 1/1/2/2;
@@ -366,6 +397,19 @@ div.Contact div.div4 {
   div.Contact div.link section i {
     font-size: 3.75rem;
   }
+  div.Contact div.copyMail section {
+    padding: 2vh 1vh;
+    gap: 2vw;
+  }
+  div.Contact div.copyMail section h2 {
+    font-size: 1.2rem;
+  }
+  div.Contact div.copyMail section i {
+    font-size: 1.2rem;
+  }
+  div.Contact div.div3 {
+    grid-area: 3/1/4/4;
+  }
 }
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
@@ -375,6 +419,9 @@ div.Contact div.div4 {
   }
   div.Contact div.link section {
     -webkit-tap-highlight-color: transparent;
+  }
+  div.Contact div.div3 {
+    grid-area: 3/1/4/4;
   }
 }
 * {

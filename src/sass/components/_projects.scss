@@ -4,6 +4,7 @@ div.Projects {
     @include var.flex-container(row,flex-end,unset);
     padding: 50vh 7vh 7vh 7vh;
     overflow: scroll;
+    scroll-behavior: smooth;
     ul {
         list-style-type: none;
         width: 100%;
