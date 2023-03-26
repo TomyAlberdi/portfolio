@@ -9,7 +9,8 @@ div.Contact {
     div {
         @include var.flex-container(row,center,center);
         &.link {
-            section {
+            a {
+                text-decoration: none;
                 @include var.flex-container(column,center,center);
                 gap: 1vh;
                 i {
@@ -80,7 +81,7 @@ div.Contact {
         padding: 12vh 2vh 6vh;
         div {
             &.link {
-                section {
+                a {
                     width: 7.5rem;
                     height: 7.5rem;
                     i {
@@ -113,7 +114,7 @@ div.Contact {
         padding: 12vh 2vh 6vh;
         div {
             &.link {
-                section {
+                a {
                     -webkit-tap-highlight-color: transparent;
                 }
             }

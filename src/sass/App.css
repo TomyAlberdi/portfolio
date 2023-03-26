@@ -375,7 +375,8 @@ div.Contact div {
   flex-direction: row;
   justify-content: center;
 }
-div.Contact div.link section {
+div.Contact div.link a {
+  text-decoration: none;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -386,25 +387,25 @@ div.Contact div.link section {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-div.Contact div.link section i {
+div.Contact div.link a i {
   color: #EB455F;
   font-size: 5rem;
 }
-div.Contact div.link section span {
+div.Contact div.link a span {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   gap: 0.5vw;
 }
-div.Contact div.link section span h3 {
+div.Contact div.link a span h3 {
   text-align: center;
   font-weight: 300;
 }
-div.Contact div.link section span i {
+div.Contact div.link a span i {
   font-size: 1rem;
 }
-div.Contact div.link section:hover {
+div.Contact div.link a:hover {
   transition: all 0.3s ease-out;
   transform: scale(1.05);
 }
@@ -457,12 +458,12 @@ div.Contact div.div4 {
     grid-template-columns: 1fr 0.25fr 1fr;
     padding: 12vh 2vh 6vh;
   }
-  div.Contact div.link section {
+  div.Contact div.link a {
     width: 7.5rem;
     height: 7.5rem;
     -webkit-tap-highlight-color: transparent;
   }
-  div.Contact div.link section i {
+  div.Contact div.link a i {
     font-size: 3.75rem;
   }
   div.Contact div.copyMail section {
@@ -485,7 +486,7 @@ div.Contact div.div4 {
     grid-template-columns: 1fr 0.25fr 1fr;
     padding: 12vh 2vh 6vh;
   }
-  div.Contact div.link section {
+  div.Contact div.link a {
     -webkit-tap-highlight-color: transparent;
   }
   div.Contact div.div3 {
