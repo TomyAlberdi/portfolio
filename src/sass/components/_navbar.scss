@@ -80,6 +80,7 @@ section.mobileMenu {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    max-height: 100dvh;
     top: 0;
     left: -100vw;
     backdrop-filter: blur(20px);
@@ -104,10 +105,11 @@ section.mobileMenu {
     section.language {
         @include var.flex-container(row,center,center);
         position: absolute;
-        bottom: 0;
-        right: 0;
+        top: 0;
+        left: 0;
+        padding: 2vh 3vh;
         div {
-            padding: 1.5vh;
+            padding: 1vh 1.5vh;
             font-size: 1.2rem;
             i {
                 padding: 0 2.5vw 0 0;
