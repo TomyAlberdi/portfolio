@@ -5,7 +5,6 @@ const Navbar = () => {
 
     const openMenu = () => {
         document.querySelector(".mobileMenu").classList.toggle("open")
-        // document.querySelector("body").classList.toggle("open_menu")
     }
 
     return (

@@ -61,7 +61,7 @@ html {
                     width: 100%;
                     z-index: 50;
                     @include var.flex-container(row,center,center);
-                    background-color: rgb(24, 24, 24);
+                    background-image: linear-gradient(to right bottom, #100226, #130826, #160d26, #191227, #1c1527);
                     h1 {
                         -webkit-animation: fade-out 1.5s ease-out 1.5s both;
                         animation: fade-out 1.5s ease-out 1.5s both;
@@ -75,9 +75,6 @@ html {
                     }
                 }
             }
-        }
-        &.open_menu {
-            position: fixed;
         }
     }
 }  
