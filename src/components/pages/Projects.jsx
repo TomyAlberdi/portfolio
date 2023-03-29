@@ -1,7 +1,7 @@
 import React from 'react'
 import projectsList from '../utils/projects.json'
 
-const Projects = () => {
+const Projects = ({Español}) => {
     return (
         <div className='Main Projects'>
             <ul>
@@ -10,7 +10,7 @@ const Projects = () => {
                         return <li key={index}>
                             <a href={item.link} target="_blank">
                                 <span className="date">{item.año}</span>
-                                <span className="nombre">{item.nombre}</span>
+                                <span className="nombre">{Español ? item.nombre_spanish : item.nombre_english}</span>
                                 <div className="icons">
                                     {
                                         item.icons.map((e,index) => {

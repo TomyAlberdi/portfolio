@@ -1,7 +1,8 @@
 [
     {
         "año":"2022",
-        "nombre":"To-Do List with Themes",
+        "nombre_english":"To-Do List with Themes",
+        "nombre_spanish":"Lista To-Do con Temas",
         "icons":[
             "fa-brands fa-html5",
             "fa-brands fa-sass",
@@ -11,7 +12,8 @@
     },
     {
         "año":"2022",
-        "nombre":"Time Tracking Dashboard",
+        "nombre_english":"Time Tracking Dashboard",
+        "nombre_spanish":"Panel de Tiempo",
         "icons":[
             "fa-brands fa-html5",
             "fa-brands fa-sass",
@@ -21,7 +23,8 @@
     },
     {
         "año":"2022",
-        "nombre":"Interactive Card Details Form",
+        "nombre_english":"Card Details",
+        "nombre_spanish":"Detalles de Tarjeta",
         "icons":[
             "fa-brands fa-html5",
             "fa-brands fa-sass",
@@ -31,7 +34,8 @@
     },
     {
         "año":"2022",
-        "nombre":"Expenses Chart",
+        "nombre_english":"Expenses Chart",
+        "nombre_spanish":"Gráfico de gastos",
         "icons":[
             "fa-brands fa-html5",
             "fa-brands fa-sass",
@@ -41,7 +45,8 @@
     },
     {
         "año":"2022",
-        "nombre":"Advice Generator",
+        "nombre_english":"Advice Generator",
+        "nombre_spanish":"Generador de consejos",
         "icons":[
             "fa-brands fa-html5",
             "fa-brands fa-sass",

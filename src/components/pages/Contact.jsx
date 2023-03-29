@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Contact = () => {
+const Contact = ({Español}) => {
 
     const copyMail = () => {
         navigator.clipboard.writeText("tomas.alberdi.2001@gmail.com")
@@ -13,7 +13,11 @@ const Contact = () => {
         icon.classList.remove("fa-regular")
         icon.classList.add("fa-check")
         icon.classList.add("fa-solid")
-        text.innerHTML = "Email Saved!"
+        if (Español) {
+            text.innerHTML = "Email Copiado!"
+        } else {
+            text.innerHTML = "Email Saved!"
+        }
     }
 
     return (

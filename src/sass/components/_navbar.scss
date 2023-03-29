@@ -2,55 +2,70 @@
 
 header {
     backdrop-filter: blur(10px);
-    @include var.flex-container(row,flex-end,center);
+    @include var.flex-container(row,space-between,center);
     z-index: 10;
     width: 100%;
     height: 10vh;
     position: fixed;
     top: 0;
-    section.icon {
-        @include var.flex-container(row,center,center);
-        cursor: pointer;
-        height: 10vh;
-        width: 10vh;
-        a {
-            height: 80%;
-            width: 80%;
-            img {
+    &.navbar-desktop {
+        div.nav {
+            @include var.flex-container(row,center,center);
+            section.icon {
+                @include var.flex-container(row,center,center);
+                cursor: pointer;
+                height: 10vh;
+                width: 10vh;
+                a {
+                    height: 80%;
+                    width: 80%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+            section.links {
+                @include var.flex-container(row,center,center);
                 height: 100%;
-                width: 100%;
+                div.navLinks {
+                    @include var.flex-container(row,center,center);
+                    width: 10vw;
+                    a {
+                        font-size: 1.2rem;
+                        display: inline-block;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background: var.$acc;
+                            transition: all 0.25s ease-in-out;
+                        }
+                        &:hover::after {
+                            width: 100%;
+                            transition: all 0.25s ease-in-out;
+                        }
+                        text-decoration: none;
+                        height: 100%;
+                    }
+                }
             }
         }
-        transition: all 0.25s ease-in-out;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-            transition: all 0.25s ease-in-out;
-        }
-    }
-    &.navbar-desktop {
-        section.links {
-            @include var.flex-container(row,center,center);
+        section.language {
+            @include var.flex-container(column,center,left);
+            gap: 1vh;
             height: 100%;
+            width: 10vw;
             div {
-                @include var.flex-container(row,center,center);
-                width: 10vw;
-                a {
-                    font-size: 1.2rem;
-                    display: inline-block;
-                    &::after {
-                        content: '';
-                        display: block;
-                        width: 0;
-                        height: 2px;
-                        background: var.$acc;
-                        transition: all 0.25s ease-in-out;
-                    }
-                    &:hover::after {
-                        width: 100%;
-                        transition: all 0.25s ease-in-out;
-                    }
-                    text-decoration: none;
-                    height: 100%;
+                cursor: pointer;
+                i {
+                    padding: 0 0.5vw 0 1.5vw;
                 }
             }
         }
@@ -72,7 +87,7 @@ section.mobileMenu {
     i {
         color: var.$acc;
     }
-    div {
+    div.container {
         @include var.flex-container(column,center,center);
         width: 100%;
         a {
@@ -84,6 +99,19 @@ section.mobileMenu {
             text-decoration: none;
             font-size: 1.25rem;
             padding-left: 35vw;
+        }
+    }
+    section.language {
+        @include var.flex-container(row,center,center);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        div {
+            padding: 1.5vh;
+            font-size: 1.2rem;
+            i {
+                padding: 0 2.5vw 0 0;
+            }
         }
     }
     i.fa-xmark {
@@ -117,6 +145,25 @@ section.mobileMenu {
                     font-size: 3rem;
                 }
             }
+            section.icon {
+                @include var.flex-container(row,center,center);
+                cursor: pointer;
+                height: 10vh;
+                width: 10vh;
+                a {
+                    height: 80%;
+                    width: 80%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    transition: all 0.25s ease-in-out;
+                }
+            }
         }
     }
     section.mobileMenu {
@@ -140,6 +187,25 @@ section.mobileMenu {
                 width: 12vh;
                 i {
                     font-size: 4rem;
+                }
+            }
+            section.icon {
+                @include var.flex-container(row,center,center);
+                cursor: pointer;
+                height: 10vh;
+                width: 10vh;
+                a {
+                    height: 80%;
+                    width: 80%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    transition: all 0.25s ease-in-out;
                 }
             }
         }

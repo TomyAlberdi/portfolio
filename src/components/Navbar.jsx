@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({setEspañol, Español}) => {
 
     const openMenu = () => {
         document.querySelector(".mobileMenu").classList.toggle("open")
@@ -10,20 +10,32 @@ const Navbar = () => {
     return (
         <>
             <header className='navbar-desktop'>
-                <section className='links'>
-                    <div>
-                        <Link to={"/"}>Home</Link>
+                <section className="language">
+                    <div onClick={() => setEspañol(!Español)}>
+                        <i className={Español ? "fa-regular fa-square" : "fa-regular fa-square-check"}></i>
+                        English
                     </div>
-                    <div>
-                        <Link to={"/projects"}>Projects</Link>
-                    </div>
-                    <div>
-                        <Link to={"/contact"}>Contact</Link>
+                    <div onClick={() => setEspañol(!Español)}>
+                        <i className={Español ? "fa-regular fa-square-check" : "fa-regular fa-square"}></i>
+                        Español
                     </div>
                 </section>
-                <section className="icon">
-                    <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
-                </section>
+                <div className='nav'>
+                    <section className='links'>
+                        <div className='navLinks'>
+                            <Link to={"/"}>{Español ? "Inicio" : "Home"}</Link>
+                        </div>
+                        <div className='navLinks'>
+                            <Link to={"/projects"}>{Español ? "Proyectos" : "Projects"}</Link>
+                        </div>
+                        <div className='navLinks'>
+                            <Link to={"/contact"}>{Español ? "Contacto" : "Contact"}</Link>
+                        </div>
+                    </section>
+                    <section className="icon">
+                        <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                    </section>
+                </div>
             </header>
             <header className='navbar-mobile'>
                 <section className="menuSection" onClick={openMenu}>
@@ -35,11 +47,21 @@ const Navbar = () => {
             </header>
             <section className="mobileMenu">
                 <i className='fa-solid fa-xmark' onClick={openMenu}></i>
-                <div>
-                    <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span> Home</span></Link>
-                    <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span> Projects</span></Link>
-                    <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span> Contact</span></Link>
+                <div className='container'>
+                    <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span>{Español ? " Inicio" : " Home"}</span></Link>
+                    <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span>{Español ? " Proyectos" : " Projects"}</span></Link>
+                    <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span>{Español ? " Contacto" : " Contact"}</span></Link>
                 </div>
+                <section className="language">
+                    <div onClick={() => setEspañol(!Español)}>
+                        <i className={Español ? "fa-regular fa-square-check" : "fa-regular fa-square"}></i>
+                        Español
+                    </div>
+                    <div onClick={() => setEspañol(!Español)}>
+                        <i className={Español ? "fa-regular fa-square" : "fa-regular fa-square-check"}></i>
+                        English
+                    </div> 
+                </section>
             </section>
         </>
     )
