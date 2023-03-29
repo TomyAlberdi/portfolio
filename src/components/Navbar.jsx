@@ -11,9 +11,15 @@ const Navbar = () => {
         <>
             <header className='navbar-desktop'>
                 <section className='links'>
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/projects"}>Projects</Link>
-                    <Link to={"/contact"}>Contact</Link>
+                    <div>
+                        <Link to={"/"}>Home</Link>
+                    </div>
+                    <div>
+                        <Link to={"/projects"}>Projects</Link>
+                    </div>
+                    <div>
+                        <Link to={"/contact"}>Contact</Link>
+                    </div>
                 </section>
                 <section className="icon">
                     <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
