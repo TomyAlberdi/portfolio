@@ -1,4 +1,4 @@
-import './sass/App.css'
+import './sass/App.scss'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/pages/Home'
@@ -21,7 +21,6 @@ function App() {
             <Navbar />
             <main>
                 <Welcome Loading={Loading} />
-                <div className="bkg"></div>
                 <section className="pres">
                     <h1>Tomás Alberdi</h1>
                     <h3>Software Developer</h3>

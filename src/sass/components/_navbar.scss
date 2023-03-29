@@ -1,7 +1,7 @@
 @use './var';
 
 header {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     @include var.flex-container(row,flex-end,center);
     z-index: 10;
     width: 100%;
@@ -99,7 +99,7 @@ section.mobileMenu {
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;
@@ -124,7 +124,7 @@ section.mobileMenu {
         }
         &.navbar-mobile {
             @include var.flex-container(row,space-between,center);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             section.menuSection {
                 @include var.flex-container(row,center,center);
                 height: 100%;

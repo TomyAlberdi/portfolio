@@ -23,20 +23,8 @@ html {
             main {
                 min-height: auto;
                 @include var.flex-container(row,center,flex-start);
-                width: 100vw;
-                height: 100vh;
-                position: relative;
+                background-image: linear-gradient(to right bottom, #100226, #130826, #160d26, #191227, #1c1527);
                 overflow: hidden;
-                background-color: black;
-                .bkg {
-                    opacity: 0.12;
-                    width: 3500vh;
-                    height: 3500vh;
-                    position: absolute;
-                    background: url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png');
-                    -webkit-animation: rotate-center 1000s linear infinite ;
-                    animation: rotate-center 1000s linear infinite ;
-                }
                 section.pres {
                     @include var.flex-container(column,flex-start,center);
                     z-index: 9;
@@ -149,26 +137,6 @@ html {
     }
 }
 
-@-webkit-keyframes rotate-center {
-    0% {
-        -webkit-transform: rotate(0);
-                transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-    }
-}
-@keyframes rotate-center {
-    0% {
-        -webkit-transform: rotate(0);
-                transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-    }
-}
 
 @-webkit-keyframes fade-out {
     0% {
@@ -186,4 +154,3 @@ html {
         opacity: 0;
     }
 }
-  
