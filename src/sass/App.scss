@@ -21,18 +21,15 @@ html {
         overscroll-behavior-x: none;
         div.App {
             main {
+                background-color: black;
                 div.bkg {
-                    background: rgb(39,39,39);
-                    background: linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
-                    background: -moz-linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
-                    background: -webkit-linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
+                    opacity: 0.12;
+                    width: 2000vh;
+                    height: 2000vh;
                     position: absolute;
-                    width: 1000vw;
-                    height: 1000vw;
-                    z-index: -1;
-                    top: -100%;
-                    -webkit-animation: rotate-center 12s linear infinite both;
-                    animation: rotate-center 12s linear infinite both;
+                    background: url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png');
+                    -webkit-animation: rotate-center 300s linear infinite ;
+                    animation: rotate-center 300s linear infinite ;
                 }
                 min-height: auto;
                 @include var.flex-container(row,center,flex-start);
@@ -74,7 +71,7 @@ html {
                     width: 100%;
                     z-index: 50;
                     @include var.flex-container(row,center,center);
-                    background-color: #1e1225;
+                    background-color: #141215;
                     h1 {
                         -webkit-animation: fade-out 1.5s ease-out 1.5s both;
                         animation: fade-out 1.5s ease-out 1.5s both;
@@ -167,22 +164,21 @@ html {
 
 @-webkit-keyframes rotate-center {
     0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 @keyframes rotate-center {
     0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
-  
