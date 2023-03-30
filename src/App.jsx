@@ -22,6 +22,7 @@ function App() {
         <div className="App">
             <Navbar setEspañol={setEspañol} Español={Español} />
             <main>
+                <div className="bkg"></div>
                 <Welcome Loading={Loading} />
                 <section className="pres">
                     <h1>Tomás Alberdi</h1>

@@ -21,10 +21,23 @@ html {
         overscroll-behavior-x: none;
         div.App {
             main {
+                div.bkg {
+                    background: rgb(39,39,39);
+                    background: linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
+                    background: -moz-linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
+                    background: -webkit-linear-gradient(90deg, #272727, #272628, #28252a, #28222d, #281f31, #291b35, #28173a, #27133e, #260f42, #250b45, #240847, #240748);
+                    position: absolute;
+                    width: 1000vw;
+                    height: 1000vw;
+                    z-index: -1;
+                    top: -100%;
+                    -webkit-animation: rotate-center 12s linear infinite both;
+                    animation: rotate-center 12s linear infinite both;
+                }
                 min-height: auto;
                 @include var.flex-container(row,center,flex-start);
-                background-image: linear-gradient(to right bottom, #100226, #130826, #160d26, #191227, #1c1527);
                 overflow: hidden;
+                position: relative;
                 section.pres {
                     @include var.flex-container(column,flex-start,center);
                     z-index: 9;
@@ -61,7 +74,7 @@ html {
                     width: 100%;
                     z-index: 50;
                     @include var.flex-container(row,center,center);
-                    background-image: linear-gradient(to right bottom, #100226, #130826, #160d26, #191227, #1c1527);
+                    background-color: #1e1225;
                     h1 {
                         -webkit-animation: fade-out 1.5s ease-out 1.5s both;
                         animation: fade-out 1.5s ease-out 1.5s both;
@@ -151,3 +164,25 @@ html {
         opacity: 0;
     }
 }
+
+@-webkit-keyframes rotate-center {
+    0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+  
