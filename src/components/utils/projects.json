@@ -5,7 +5,7 @@
         "nombre_spanish":"Panel de Álbumes Favoritos",
         "icons":[
             "fa-brands fa-sass",
-            "fa-brands fa-react",
+            "fa-brands fa-react"
         ],
         "link":"https://tomyalberdi.github.io/Albums-Dashboard/"
     },
