@@ -1,5 +1,15 @@
 [
     {
+        "año":"2023",
+        "nombre_english":"Favorite Album Dashboard",
+        "nombre_spanish":"Panel de Álbumes Favoritos",
+        "icons":[
+            "fa-brands fa-sass",
+            "fa-brands fa-react",
+        ],
+        "link":"https://tomyalberdi.github.io/Albums-Dashboard/"
+    },
+    {
         "año":"2022",
         "nombre_english":"To-Do List with Themes",
         "nombre_spanish":"Lista To-Do con Temas",
