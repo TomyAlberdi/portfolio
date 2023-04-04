@@ -28,8 +28,8 @@ html {
                     height: 2000vh;
                     position: absolute;
                     background: url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png');
-                    -webkit-animation: rotate-center 300s linear infinite ;
-                    animation: rotate-center 300s linear infinite ;
+                    -webkit-animation: rotate-center 500s linear infinite ;
+                    animation: rotate-center 500s linear infinite ;
                 }
                 min-height: auto;
                 @include var.flex-container(row,center,flex-start);
