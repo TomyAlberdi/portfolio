@@ -66,6 +66,7 @@ html {
                 div.Welcome {
                     -webkit-animation: fade-out 2.5s ease-out 1.5s both;
                     animation: fade-out 2.5s ease-out 1.5s both;
+                    animation-delay: 2.5s;
                     position: absolute;
                     height: 100%;
                     width: 100%;
