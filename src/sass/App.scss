@@ -64,8 +64,8 @@ html {
                     scrollbar-width: none;
                 }
                 div.Welcome {
-                    -webkit-animation: fade-out 2s ease-out 2.5s both;
-                    animation: fade-out 2s ease-out 2.5s both;
+                    -webkit-animation: fade-out 0.5s ease-out 2s both;
+                    animation: fade-out 0.5s ease-out 2s both;
                     position: absolute;
                     height: 100%;
                     width: 100%;
@@ -73,8 +73,8 @@ html {
                     @include var.flex-container(row,center,center);
                     background-color: #141215;
                     h1 {
-                        -webkit-animation: fade-out 1.5s ease-out 1.5s both;
-                        animation: fade-out 1.5s ease-out 1.5s both;
+                        -webkit-animation: fade-out 1s ease-out 1s both;
+                        animation: fade-out 1s ease-out 1s both;
                         font-size: 3rem;
                         color: var.$white;
                         span {
