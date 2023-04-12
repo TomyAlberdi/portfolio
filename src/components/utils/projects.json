@@ -1,11 +1,21 @@
 [
     {
         "año":"2023",
+        "nombre_english":"Weather App",
+        "nombre_spanish":"App del Clima",
+        "icons":[
+            "fa-brands fa-react",
+            "fa-brands fa-sass"
+        ],
+        "link":"https://tomyalberdi.github.io/Weather-App/"
+    },
+    {
+        "año":"2023",
         "nombre_english":"Favorite Album Dashboard",
         "nombre_spanish":"Panel de Álbumes Favoritos",
         "icons":[
-            "fa-brands fa-sass",
-            "fa-brands fa-react"
+            "fa-brands fa-react",
+            "fa-brands fa-sass"
         ],
         "link":"https://tomyalberdi.github.io/Albums-Dashboard/"
     },
