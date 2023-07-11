@@ -1,6 +1,16 @@
 [
     {
         "año":"2023",
+        "nombre_english":"Coin: Expense Tracking",
+        "nombre_spanish":"Coin: Seguimiento de gastos",
+        "icons":[
+            "fa-brands fa-java",
+            "fa-brands fa-docker"
+        ],
+        "link":"https://github.com/TomyAlberdi/Coin-Backend"
+    },
+    {
+        "año":"2023",
         "nombre_english":"Weather App",
         "nombre_spanish":"App del Clima",
         "icons":[
@@ -11,7 +21,7 @@
     },
     {
         "año":"2023",
-        "nombre_english":"Favorite Album Dashboard",
+        "nombre_english":"Favorite Albums Dashboard",
         "nombre_spanish":"Panel de Álbumes Favoritos",
         "icons":[
             "fa-brands fa-react",
@@ -51,27 +61,5 @@
             "fa-brands fa-js"
         ],
         "link":"https://tomyalberdi.github.io/Interactive-Card-Details-Form/"
-    },
-    {
-        "año":"2022",
-        "nombre_english":"Expenses Chart",
-        "nombre_spanish":"Gráfico de gastos",
-        "icons":[
-            "fa-brands fa-html5",
-            "fa-brands fa-sass",
-            "fa-brands fa-js"
-        ],
-        "link":"https://tomyalberdi.github.io/Expenses-Chart-Component/"
-    },
-    {
-        "año":"2022",
-        "nombre_english":"Advice Generator",
-        "nombre_spanish":"Generador de consejos",
-        "icons":[
-            "fa-brands fa-html5",
-            "fa-brands fa-sass",
-            "fa-brands fa-js"
-        ],
-        "link":"https://tomyalberdi.github.io/Advice-Generator-App/"
     }
 ]
