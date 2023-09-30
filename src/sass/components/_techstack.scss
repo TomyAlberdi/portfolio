@@ -1,8 +1,21 @@
 @use "./var";
 
 div.TechStack {
-  border: 1px solid red;
-  @include var.flex-container(row,center,center);
+  @include var.flex-container(column,center,unset);
+  padding: 20vh 0 7vh 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  ul {
+    margin-top: 80vh;
+    list-style-type: none;
+    width: 100%;
+    li.tech {
+      margin: 2.5vh 0;
+      border: 1px solid green;
+      height: 40vh;
+      padding: 2.5vh;
+    }
+  }
 }
 
 /* Query Mobile */
