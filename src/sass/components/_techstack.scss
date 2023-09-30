@@ -1,5 +1,10 @@
 @use "./var";
 
+$front: #095D42;
+$back: #96222A;
+$datab: #003459;
+$infra: #5B3A69;
+
 div.TechStack {
   @include var.flex-container(column,center,unset);
   padding: 20vh 0 7vh 0;
@@ -8,12 +13,28 @@ div.TechStack {
   ul {
     margin-top: 80vh;
     list-style-type: none;
-    width: 100%;
+    width: 95%;
     li.tech {
       margin: 2.5vh 0;
-      border: 1px solid green;
       height: 40vh;
       padding: 2.5vh;
+      border-radius: 2vh;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      &.frontend {
+        background-color: $front;
+      }
+      &.backend {
+        background-color: $back;
+      }
+      &.database {
+        background-color: $datab;
+      }
+      &.infrastructure {
+        background-color: $infra;
+      }
     }
   }
 }
@@ -21,13 +42,13 @@ div.TechStack {
 /* Query Mobile */
 @media screen and (max-width: 765px) {
   div.TechStack {
-
+    align-items: center;
   }
 }
 
 /* Query Tablet */
 @media screen and (min-width: 766px) and (max-width: 1023px) {
   div.TechStack {
-
+    align-items: center;
   }
 }

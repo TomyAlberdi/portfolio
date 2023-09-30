@@ -5,16 +5,16 @@ const TechStack = ({Español}) => {
     <div className='Main TechStack'>
       <ul>
         <li className="tech frontend">
-          <h3>Frontend</h3>
+          <h3>{ Español ? "Desarrollo Frontend" : "Frontend Development"}</h3>
         </li>
         <li className="tech backend">
-          <h3>Backend</h3>
+          <h3>{ Español ? "Desarrollo Backend" : "Backend Development"}</h3>
         </li>
         <li className="tech database">
-          <h3>Database</h3>
+          <h3>{ Español ? "Administración de bases de datos" : "Database Administration"}</h3>
         </li>
         <li className="tech infrastructure">
-          <h3>Infrastructure</h3>
+          <h3>{ Español ? "Infraestructura" : "Infrastructure"}</h3>
         </li>
       </ul>
     </div>
