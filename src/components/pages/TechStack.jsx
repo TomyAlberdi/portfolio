@@ -2,7 +2,9 @@ import React from 'react'
 
 const TechStack = ({Español}) => {
   return (
-    <div>TechStack</div>
+    <div className='Main TechStack'>
+      TechStack
+    </div>
   )
 }
 

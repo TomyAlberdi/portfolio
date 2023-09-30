@@ -1,0 +1,20 @@
+@use "./var";
+
+div.TechStack {
+  border: 1px solid red;
+  @include var.flex-container(row,center,center);
+}
+
+/* Query Mobile */
+@media screen and (max-width: 765px) {
+  div.TechStack {
+
+  }
+}
+
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+  div.TechStack {
+
+  }
+}
