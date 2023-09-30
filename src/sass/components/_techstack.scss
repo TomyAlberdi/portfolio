@@ -4,24 +4,39 @@ $front: #095D42;
 $back: #96222A;
 $datab: #003459;
 $infra: #5B3A69;
+$shadow-bkg:rgb(0, 0, 0, 0.4);
 
 div.TechStack {
-  @include var.flex-container(column,center,unset);
-  padding: 20vh 0 7vh 0;
+  @include var.flex-container(column,unset,unset);
+  padding: 10vh 0 7vh 0;
   overflow: scroll;
   scroll-behavior: smooth;
   ul {
-    margin-top: 80vh;
     list-style-type: none;
     width: 95%;
     li.tech {
+      @include var.flex-container(column,unset,unset);
       margin: 2.5vh 0;
-      height: 40vh;
       padding: 2.5vh;
       border-radius: 2vh;
+      gap: 2.5vh;
       h3 {
         font-size: 2rem;
         font-weight: 500;
+      }
+      section.tech_details {
+        @include var.flex-container(row,left,center);
+        height: 84%;
+        flex-wrap: wrap;
+        gap: 2.5vh;
+        div {
+          @include var.flex-container(column,center,center);
+          background-color: $shadow-bkg;
+          padding: 2.5vh;
+          border-radius: 2vh;
+          font-size: 1.5rem;
+          width: 14%;
+        }
       }
       &.frontend {
         background-color: $front;
