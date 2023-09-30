@@ -35,7 +35,10 @@ div.TechStack {
           padding: 2.5vh;
           border-radius: 2vh;
           font-size: 1.5rem;
-          width: 14%;
+          min-width: 10%;
+          i {
+            font-size: 2rem;
+          }
         }
       }
       &.frontend {
