@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/pages/Home'
 import Projects from './components/pages/Projects'
 import Contact from './components/pages/Contact'
+import TechStack from './components/pages/TechStack'
 import Welcome from './components/utils/Welcome'
 import { useEffect, useState } from 'react'
 
@@ -30,6 +31,7 @@ function App() {
                 </section>
                 <Routes>
                     <Route exact path='/' element={<Home Español={Español} />} />
+                    <Route path='/stack' element={<TechStack Español={Español} />} />
                     <Route path='/projects' element={<Projects Español={Español} />} />
                     <Route path='/contact' element={<Contact Español={Español} />} />
                 </Routes>

@@ -26,6 +26,9 @@ const Navbar = ({setEspañol, Español}) => {
                             <Link to={"/"}>{Español ? "Inicio" : "Home"}</Link>
                         </div>
                         <div className='navLinks'>
+                            <Link to={"/stack"}>Tech Stack</Link>
+                        </div>
+                        <div className='navLinks'>
                             <Link to={"/projects"}>{Español ? "Proyectos" : "Projects"}</Link>
                         </div>
                         <div className='navLinks'>
@@ -49,6 +52,7 @@ const Navbar = ({setEspañol, Español}) => {
                 <i className='fa-solid fa-xmark' onClick={openMenu}></i>
                 <div className='container'>
                     <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span>{Español ? " Inicio" : " Home"}</span></Link>
+                    <Link to={"/stack"} onClick={openMenu}><i className="fa-solid fa-layer-group"></i><span>Tech Stack</span></Link>
                     <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span>{Español ? " Proyectos" : " Projects"}</span></Link>
                     <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span>{Español ? " Contacto" : " Contact"}</span></Link>
                 </div>
