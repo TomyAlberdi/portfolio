@@ -31,27 +31,29 @@ const Home = ({Español}) => {
                 {Español ? (
                     <>
                         <p>
-                            En 2023, me gradué como <Link to="http://google.com" target="_blank">Certified Tech Developer</Link>,
+                            En 2023, me gradué como <Link to="https://www.digitalhouse.com/ar/productos/programacion/certified-tech-developer" target="_blank">Certified Tech Developer</Link>,
                             una carrera respaldada por Globant y Mercado Libre. <br />
                             Gracias a esto, desarrollé conocimiento en las siguientes tecnologías:
                         </p>
                         <ul>
-                            <li>Desarrollo Front End: Básico, Sass y React</li>
-                            <li>Desarrollo Back End: SQL y Java (Sprint/Hibernate)</li>
-                            <li>Otras habilidades: UX/UI y Testing</li>
+                            <li>Desarrollo Front End</li>
+                            <li>Desarrollo Back End</li>
+                            <li>Administración de bases de datos</li>
+                            <li>CI/CD</li>
                         </ul>
                     </>
                 ): (
                     <>
                         <p>
-                            In 2023, I graduated as a <Link to="http://google.com" target="_blank">Certified Tech Developer</Link>, 
+                            In 2023, I graduated as a <Link to="https://www.digitalhouse.com/ar/productos/programacion/certified-tech-developer" target="_blank">Certified Tech Developer</Link>, 
                             a degree backed by Globant and Mercado Libre. <br />
                             Thanks to this, I developed knowledge in the following fields:
                         </p>
                         <ul>
-                            <li>Front End Development: Basic, Sass & React</li>
-                            <li>Back End Development: SQL & Java (Spring/Hibernate)</li>
-                            <li>Other Skills: UX/UI & Testing</li>
+                            <li>Front End Development</li>
+                            <li>Back End Development</li>
+                            <li>Database adminstration</li>
+                            <li>CI/CD</li>
                         </ul>
                     </>
                 )}
