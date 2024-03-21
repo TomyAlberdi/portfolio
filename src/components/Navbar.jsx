@@ -23,20 +23,20 @@ const Navbar = ({setEspañol, Español}) => {
                 <div className='nav'>
                     <section className='links'>
                         <div className='navLinks'>
-                            <Link to={"/"}>{Español ? "Inicio" : "Home"}</Link>
+                            <Link to={"/Portfolio/"}>{Español ? "Inicio" : "Home"}</Link>
                         </div>
                         <div className='navLinks'>
-                            <Link to={"/stack"}>Tech Stack</Link>
+                            <Link to={"/Portfolio/stack"}>Tech Stack</Link>
                         </div>
                         <div className='navLinks'>
-                            <Link to={"/projects"}>{Español ? "Proyectos" : "Projects"}</Link>
+                            <Link to={"/Portfolio/projects"}>{Español ? "Proyectos" : "Projects"}</Link>
                         </div>
                         <div className='navLinks'>
-                            <Link to={"/contact"}>{Español ? "Contacto" : "Contact"}</Link>
+                            <Link to={"/Portfolio/contact"}>{Español ? "Contacto" : "Contact"}</Link>
                         </div>
                     </section>
                     <section className="icon">
-                        <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                        <Link to={"/Portfolio/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
                     </section>
                 </div>
             </header>
@@ -45,16 +45,16 @@ const Navbar = ({setEspañol, Español}) => {
                     <i className="fa-solid fa-bars"></i>
                 </section>
                 <section className="icon">
-                    <Link to={"/"}><img src="/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
+                    <Link to={"/Portfolio/"}><img src="/Portfolio/favicon.ico" alt="Ícono de la barra de navegación" /></Link>
                 </section>
             </header>
             <section className="mobileMenu">
                 <i className='fa-solid fa-xmark' onClick={openMenu}></i>
                 <div className='container'>
-                    <Link to={"/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span>{Español ? " Inicio" : " Home"}</span></Link>
-                    <Link to={"/stack"} onClick={openMenu}><i className="fa-solid fa-layer-group"></i><span>Tech Stack</span></Link>
-                    <Link to={"/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span>{Español ? " Proyectos" : " Projects"}</span></Link>
-                    <Link to={"/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span>{Español ? " Contacto" : " Contact"}</span></Link>
+                    <Link to={"/Portfolio/"} onClick={openMenu}><i className="fa-solid fa-house"></i><span>{Español ? " Inicio" : " Home"}</span></Link>
+                    <Link to={"/Portfolio/stack"} onClick={openMenu}><i className="fa-solid fa-layer-group"></i><span>Tech Stack</span></Link>
+                    <Link to={"/Portfolio/projects"} onClick={openMenu}><i className="fa-solid fa-briefcase"></i><span>{Español ? " Proyectos" : " Projects"}</span></Link>
+                    <Link to={"/Portfolio/contact"} onClick={openMenu}><i className="fa-solid fa-message"></i><span>{Español ? " Contacto" : " Contact"}</span></Link>
                 </div>
                 <section className="language">
                     <div onClick={() => setEspañol(!Español)}>
