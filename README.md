@@ -2,7 +2,7 @@
 This personal project was built with `ReactJS` and `Sass` using `Vite`.
 
 ## Demo
-You can visit the live version of this project [here](tomas-alberdi.com)
+You can visit the live version of this project [here](https://tomyalberdi.github.io/Portfolio/)
 
 ## Features
 * Home page with information about me and my skills.
