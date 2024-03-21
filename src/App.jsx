@@ -30,10 +30,10 @@ function App() {
                     <h3>{Español ? "Desarrollador de Software" : "Software Developer"}</h3>
                 </section>
                 <Routes>
-                    <Route exact path='/Portfolio/' element={<Home Español={Español} />} />
-                    <Route path='/Portfolio/stack' element={<TechStack Español={Español} />} />
-                    <Route path='/Portfolio/projects' element={<Projects Español={Español} />} />
-                    <Route path='/Portfolio/contact' element={<Contact Español={Español} />} />
+                    <Route exact path='/' element={<Home Español={Español} />} />
+                    <Route path='/stack' element={<TechStack Español={Español} />} />
+                    <Route path='/projects' element={<Projects Español={Español} />} />
+                    <Route path='/contact' element={<Contact Español={Español} />} />
                 </Routes>
             </main>
         </div>
